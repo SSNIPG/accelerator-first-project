@@ -1,0 +1,35 @@
+.faq-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.faq-list__button {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #1c3374;
+}
+
+.faq-list__button:hover:not(:disabled) {
+  background-color: #1c3374;
+}
+
+.faq-list__button:focus:not(:disabled) {
+  background-color: #74819c;
+}
+
+.faq-list__button:disabled {
+  opacity: 0.3;
+}
+
+.faq-list__button--active {
+  background-color: #1c3374;
+}/*# sourceMappingURL=faq-list.css.map */

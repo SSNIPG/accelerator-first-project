@@ -1,4 +1,7 @@
-// https://swiperjs.com/get-started#installation
-// import Swiper from "swiper";
-// import {Navigation, Pagination} from "swiper/modules";
-// import 'swiper/css';
+
+import {getSlider} from './modules/slider/init-slider';
+import './modules/tabs/init-tabs';
+import './modules/tabs/init-tabs-price';
+import './modules/video/init-video';
+
+getSlider();

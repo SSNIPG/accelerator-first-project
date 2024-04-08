@@ -1,0 +1,40 @@
+.jury-info {
+  padding: 75px 30px 10px;
+  text-align: center;
+  background-color: rgba(16, 38, 84, 0.89);
+  color: #ffffff;
+}
+
+.jury-info span {
+  display: block;
+  margin-bottom: 33px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #b6bdcc;
+}
+
+.jury-info__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jury-info__item {
+  position: relative;
+  text-align: left;
+  padding-left: 16px;
+}
+
+.jury-info__item::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  left: 0;
+  top: 8px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}/*# sourceMappingURL=jury-info.css.map */

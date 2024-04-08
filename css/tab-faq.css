@@ -1,0 +1,36 @@
+.tab-faq {
+  display: none;
+}
+
+.tab-faq--active {
+  display: block;
+}
+
+.tab-faq__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tab-faq__item {
+  padding: 20px 0;
+}
+
+.tab-faq__item p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.tab-faq__item-inner {
+  position: relative;
+}
+
+.tab-faq__item-inner h3 {
+  margin: 0;
+  margin-bottom: 20px;
+  padding-right: 52px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 400;
+}/*# sourceMappingURL=tab-faq.css.map */

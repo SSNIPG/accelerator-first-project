@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* stylelint-disable-next-line comment-empty-line-before */
+/* здесь используйте глобальные селекторы img, body, html и так далее */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+      -o-object-fit: contain;
+      object-fit: contain;
+}
+
+body {
+  font-family: "Roboto-Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 300;
+  background-color: #ffffff;
+  color: #102654;
+  margin: 0 auto;
+}/*# sourceMappingURL=global.css.map */
