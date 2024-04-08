@@ -1,0 +1,87 @@
+.faq-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.faq-list__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  background-color: transparent;
+  border-radius: 50%;
+  border: 1px solid #1c3374;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    mask-image: url("/__spritemap#sprite-icon-plus-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    background-color: #1c3374;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+
+    &::before {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &:hover:not(:disabled) {
+    background-color: #1c3374;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+
+  &:focus:not(:disabled) {
+    background-color: #74819c;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
+.faq-list__button--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1c3374;
+
+  &::before {
+    content: "";
+    width: 14px;
+    height: 1px;
+    mask-image: url("/__spritemap#sprite-icon-minus-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 20px;
+      height: 2px;
+    }
+  }
+}

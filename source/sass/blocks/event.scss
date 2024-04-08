@@ -1,0 +1,245 @@
+.event {
+  padding: 25px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px 100px 102px;
+  }
+}
+
+.event__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.event__info {
+  display: grid;
+  grid-template-columns: 117px 37px 56px;
+  row-gap: 16px;
+  background-color: #ed0233;
+  padding: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    grid-template-columns: repeat(2, 100px);
+    column-gap: 20px;
+    row-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 80px 98px;
+    grid-template-columns: 168px 95px;
+    column-gap: 77px;
+    row-gap: 30px;
+  }
+}
+
+.event__title {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  margin: 0;
+  font-family: "AlumniSans", sans-serif;
+  font-size: 48px;
+  line-height: 54px;
+  font-weight: 600;
+  color: #ffffff;
+
+  @media (min-width: $desktop-width) {
+    font-size: 82px;
+    line-height: 96px;
+    padding-top: 1px;
+    margin-left: -0.5px;
+  }
+}
+
+.event__list {
+  grid-column: -1 / -2;
+  row-gap: 5px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 0;
+  }
+}
+
+.event__term {
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: #ffffff;
+    left: 0;
+    bottom: -3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12.5px;
+    margin-top: -0.5px;
+    margin-left: -0.5px;
+
+
+    &::after {
+      bottom: -6.5px;
+    }
+  }
+}
+
+.event__term:nth-child(3) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 3.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 12.5px;
+  }
+}
+
+.event__data {
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 400;
+  margin-top: 0.5px;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -2.5px;
+  }
+}
+
+.event__year {
+  @media (min-width: $desktop-width) {
+    margin-top: 2.5px;
+    display: inline-block;
+  }
+}
+
+.event__description {
+  display: flex;
+  gap: 3.5px;
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    gap: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    gap: 5.5px;
+    margin-left: -0.5px;
+  }
+}
+
+.event__description:not(:last-child) {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 10.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.event__text {
+  grid-column: 1/-1;
+  margin: 0;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -2px;
+    margin-left: -0.5px;
+  }
+}
+
+.event__image-wrapper {
+  @media (min-width: $tablet-width) {
+    flex-shrink: 0;
+  }
+}
+
+.event__image {
+  display: block;
+  width: 100%;
+}
+
+.event__button {
+  grid-column: 1/-1;
+  display: block;
+  padding: 22px;
+  min-height: 60px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  border: 2px solid #ffffff;
+  text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 66px;
+    padding: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 27.5px 20px 23px;
+  }
+
+  &:hover {
+    background-color: #ffffff;
+    color: #103aae;
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    opacity: 0.8;
+    color: #103aae;
+  }
+
+  &:active {
+    color: #102654;
+  }
+
+  &:disabled {
+    opacity: 0.7;
+  }
+}

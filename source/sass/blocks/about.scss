@@ -1,0 +1,255 @@
+.about {
+  padding: 40px 15px;
+  text-align: left;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 45px 34px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 103px 125px;
+  }
+}
+
+.about__inner {
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+    padding: 0 88px;
+    margin-bottom: 36.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 355px;
+    padding: 0;
+    margin-bottom: 0;
+    margin-left: -1px;
+    text-align: left;
+  }
+}
+
+.about__wrapper {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    padding-bottom: 85px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-bottom: 115px;
+    gap: 145px;
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 19px;
+    margin-left: -0.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+}
+
+.about__description {
+  margin: 0;
+  margin-bottom: 36px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    margin-bottom: 35.5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 94px;
+  }
+}
+
+.about__text p {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.about__text p:not(:first-child) {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.about__text p:not(:last-child) {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 8px;
+  }
+}
+
+.about__image-container {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 36px;
+
+  img {
+    display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-shrink: 0;
+  }
+}
+
+.about__video-container {
+  margin-right: -15px;
+  margin-left: -15px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    margin-right: 0;
+    width: 270px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+  }
+}
+
+.about__video {
+  position: relative;
+}
+
+.about__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid rgba(237, 2, 51, 0.2);
+  background-color: transparent;
+  cursor: pointer;
+
+  &::before {
+    display: block;
+    margin: auto;
+    content: "";
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-image: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
+  }
+
+  &::after {
+    content: "";
+    width: 9px;
+    height: 12px;
+    mask-image: url("/__spritemap#sprite-icon-play-view");
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: contain;
+    background-color: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform: translate(-27%, -56%);
+    left: 50%;
+  }
+
+  &:hover:not(:disabled) {
+    border-color: rgba(16, 38, 84, 0.6);
+
+    &::before {
+      background-image: none;
+      background-color: #ffffff;
+    }
+
+    &::after {
+      background-color: rgba(16, 38, 84, 0.6);
+    }
+  }
+
+  &:focus-within:not(:disabled) {
+    border-color: #102654;
+    outline: none;
+
+    &::before {
+      background-image: none;
+      background-color: #c8c9cc;
+    }
+
+    &::after {
+      background-color: #102654;
+    }
+  }
+
+  &:active:not(:disabled) {
+    &::before {
+      background-color: #ffffff;
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        width: 58px;
+        height: 58px;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100px;
+    height: 100px;
+
+    &::before {
+      width: 72px;
+      height: 72px;
+    }
+
+    &::after {
+      width: 17px;
+      height: 17px;
+      transform: translate(-36%, -52%);
+    }
+  }
+}
+
+.about__video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about__video img {
+  display: block;
+}
