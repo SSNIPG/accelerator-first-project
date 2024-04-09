@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite --host --open",
     "test": "backstop test --config=pp.config.cjs",
+    "test-js": "backstop test --config=js.config.cjs",
     "test-content": "vitest content.test.ts --ui",
     "build": "vite build --emptyOutDir",
     "preview": "vite preview --open",
