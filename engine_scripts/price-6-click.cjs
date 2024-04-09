@@ -23,7 +23,10 @@ module.exports = async (page, scenario, vp) => {
   }
 
   const container = await page.$(`[data-test="price"]`);
-  const [$el] = await getByText(container, '6 месяцев');
+  let [$el] = await getByText(container, '6 месяцев');
+  if (!$el) {
+    ([$el] = await getByText(container, '6 месяцев'))
+  }
   if (!$el) {
     throw new Error(`Element with text "6 месяцев" not found in "price" container`);
   }

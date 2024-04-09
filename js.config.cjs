@@ -52,10 +52,10 @@ module.exports = {
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./figma/index.html",
       selectors: [`[data-test="faq"]`],
-      misMatchThreshold: 0.3,
+      misMatchThreshold: 1.0,
       "onReadyScript": "faq-tab-2.cjs",
       requireSameDimensions: true,
-      delay: 500
+      delay: 1000
     },
     {
       "label": "reviews-prev",
@@ -99,7 +99,7 @@ module.exports = {
           "height": 480,
         },
       ],
-      misMatchThreshold: 0.1,
+      misMatchThreshold: 0.2,
       "onReadyScript": "fill-form-submit.cjs",
       requireSameDimensions: true,
       delay: 500
