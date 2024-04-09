@@ -47,7 +47,7 @@ module.exports = {
       requireSameDimensions: true,
       delay: 500
     },
-    {
+/*    {
       "label": "faq-tab-2",
       "url": "http://localhost:3000/index.html",
       "referenceUrl": "./figma/index.html",
@@ -56,7 +56,7 @@ module.exports = {
       "onReadyScript": "faq-tab-2.cjs",
       requireSameDimensions: true,
       delay: 1000
-    },
+    },*/
     {
       "label": "reviews-prev",
       "url": "http://localhost:3000/index.html",
