@@ -1,6 +1,6 @@
 const desktopSections = [
   {section: 'hero', misMatchThreshold: 0.5},
-  {section: 'about', misMatchThreshold: 0.5},
+  {section: 'about', misMatchThreshold: 0.6},
   {section: 'price', misMatchThreshold: 0.5},
   {section: 'games', misMatchThreshold: 0.5},
   {section: 'juri', misMatchThreshold: 0.5},
@@ -9,19 +9,19 @@ const desktopSections = [
   {section: 'faq', misMatchThreshold: 0.8},
   {section: 'reviews', misMatchThreshold: 0.5},
   {section: 'form', misMatchThreshold: 0.8},
-  {section: 'footer', misMatchThreshold: 0.8}
+  {section: 'footer', misMatchThreshold: 0.9}
 ];
 
 const tabletSections = [
   {section: 'hero', misMatchThreshold: 1.0},
-  {section: 'about', misMatchThreshold: 0.7},
+  {section: 'about', misMatchThreshold: 0.8},
   {section: 'price', misMatchThreshold: 0.5},
   {section: 'games', misMatchThreshold: 0.5},
   {section: 'juri', misMatchThreshold: 0.5},
-  {section: 'features', misMatchThreshold: 1.4},
+  {section: 'features', misMatchThreshold: 1.6},
   {section: 'offers', misMatchThreshold: 0.5},
   {section: 'faq', misMatchThreshold: 1.6},
-  {section: 'reviews', misMatchThreshold: 1.0},
+  {section: 'reviews', misMatchThreshold: 1.3},
   {section: 'form', misMatchThreshold: 1.0},
   {section: 'footer', misMatchThreshold: 1.9}
 ];
@@ -29,10 +29,10 @@ const tabletSections = [
 const mobileSections = [
   {section: 'hero', misMatchThreshold: 3.7},
   {section: 'about', misMatchThreshold: 1.8},
-  {section: 'price', misMatchThreshold: 0.8},
+  {section: 'price', misMatchThreshold: 0.9},
   {section: 'games', misMatchThreshold: 0.5},
   {section: 'juri', misMatchThreshold: 0.7},
-  {section: 'features', misMatchThreshold: 2.2},
+  {section: 'features', misMatchThreshold: 2.7},
   {section: 'offers', misMatchThreshold: 1.3},
   {section: 'faq', misMatchThreshold: 1.7},
   {section: 'reviews', misMatchThreshold: 2.6},
