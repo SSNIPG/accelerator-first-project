@@ -1,0 +1,98 @@
+.header {
+  padding: 15px;
+  background-color: #0266c1;
+
+  @media (min-width: $tablet-width) {
+    padding: 20px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 42px 120px;
+  }
+}
+
+.header--mobile {
+  position: relative;
+}
+
+.header__toggle {
+  width: 26px;
+  height: 26px;
+  background-color: transparent;
+  border: none;
+  background-image: url("/__spritemap#sprite-menu-closed-view");
+  background-repeat: no-repeat;
+  background-size: 26px 26px;
+  cursor: pointer;
+
+  &--open {
+    background-image: url("/__spritemap#sprite-menu-opend-view");
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.header__wrapper {
+  display: grid;
+  grid-template-columns: 26px 142px;
+  column-gap: 122px;
+  row-gap: 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 0;
+    row-gap: 0;
+  }
+}
+
+.header__logo {
+  display: inline-grid;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 177px;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 32px;
+    margin-right: 31px;
+  }
+}
+
+.header__phone {
+  grid-column: 2/-1;
+  justify-self: end;
+  line-height: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &:focus {
+    color: #2d383f;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    margin-top: 2px;
+    flex-shrink: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 4px;
+  }
+}
