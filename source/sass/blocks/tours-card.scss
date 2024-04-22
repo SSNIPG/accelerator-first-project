@@ -1,0 +1,30 @@
+.tours-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  min-height: 416px;
+  padding: 30px 20px;
+}
+
+.tours-card__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.tours-card__img {
+  display: block;
+  object-fit: cover;
+  min-height: 416px;
+}
+
+.tours-card__title {
+  margin: 0;
+  margin-bottom: 31px;
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #ffffff;
+}
