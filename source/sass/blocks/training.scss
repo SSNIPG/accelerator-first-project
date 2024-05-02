@@ -11,22 +11,49 @@
 }
 
 .training__title {
+  position: relative;
   font-size: 22px;
   line-height: 22px;
   font-weight: 800;
+  padding: 16px 0 0 0;
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 35px;
+
+  &::before {
+    position: absolute;
+    content: attr(data-training);
+    left: 0;
+    bottom: 12px;
+    font-size: 26px;
+    line-height: 26px;
+    font-weight: 800;
+    opacity: 3%;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 25px;
     line-height: 25px;
-    margin-bottom: 26px;
+    margin-bottom: 33px;
+    padding: 20px 100px 0 0;
+
+    &::before {
+      bottom: 0;
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     font-size: 35px;
     line-height: 35px;
-    margin-bottom: 38px;
+    margin-bottom: 32px;
+    padding: 23px 100px 0 0;
+
+    &::before {
+      bottom: -3px;
+      font-size: 55px;
+      line-height: 55px;
+    }
   }
 }
 
@@ -34,7 +61,7 @@
   p {
     line-height: 20px;
     margin: 0;
-    margin-bottom: 25px;
+    margin-bottom: 28px;
   }
 
   @media (min-width: $tablet-width) {
@@ -47,6 +74,7 @@
   @media (min-width: $desktop-width) {
     p{
       margin-bottom: 56px;
+      padding-right: 380px;
     }
   }
 }
@@ -67,10 +95,15 @@
   @media (min-width: $desktop-width) {
     font-size: 21px;
     line-height: 21px;
-    margin-bottom: 23px;
+    margin-bottom: 26px;
   }
 }
 
 .training__instructors {
+  position: relative;
   margin-bottom: 25px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 61px;
+  }
 }

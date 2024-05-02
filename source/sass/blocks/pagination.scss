@@ -1,4 +1,5 @@
-.pagination {
+.pagination,
+.swiper-pagination {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -6,7 +7,8 @@
   gap: 20px;
 }
 
-.pagination__button {
+.pagination__button,
+ .swiper-pagination-bullet {
   width: 16px;
   height: 16px;
   background-color: transparent;
@@ -28,7 +30,13 @@
     outline-offset: 1px;
   }
 
-  &--current {
-    background-color: #ffffff;
+  @media (min-width: $tablet-width) {
+    width: 20px;
+    height: 20px;
   }
+}
+
+.pagination__button,
+.swiper-pagination-bullet-active {
+  background-color: #ffffff;
 }

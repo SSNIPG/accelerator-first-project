@@ -44,19 +44,21 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">LIFETOUR - организация туров по России.</h1>
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <h2 class="visually-hidden">Новинки маршрутов.</h2>
-        <div class="hero__swiper">
-          <ul class="hero__list">
-            <li class="hero__item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-1@1x.webp 1x, img/hero/hero-desktop-1@2x.webp 2x" width="1440" height="800" type="image/webp">
-                <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-1@1x.jpg 1x, img/hero/hero-desktop-1@2x.jpg 2x" width="1440" height="800" type="image/jpg">
-                <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-1@1x.webp 1x, img/hero/hero-tablet-1@2x.webp 2x" width="768" height="1034" type="image/webp">
-                <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-1@1x.jpg 1x, img/hero/hero-tablet-1@2x.jpg 2x" width="768" height="1034" type="image/jpg">
-                <source srcset="img/hero/hero-mobile-1@1x.webp 1x, img/hero/hero-mobile-1@2x.webp 2x" type="image/webp">
-                <img class="hero__img" src="img/hero/hero-mobile-1@1x.jpg" srcset="img/hero/hero-mobile-1@2x.jpg 2x" width="320" height="568" alt="Вид на красивые вершины гор Кавказа.">
-              </picture>
+        <div class="hero__swiper swiper">
+          <ul class="hero__list swiper-wrapper">
+            <li class="hero__item swiper-slide">
+              <div class="hero__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-1@1x.webp 1x, img/hero/hero-desktop-1@2x.webp 2x" width="1440" height="800" type="image/webp">
+                  <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-1@1x.jpg 1x, img/hero/hero-desktop-1@2x.jpg 2x" width="1440" height="800" type="image/jpg">
+                  <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-1@1x.webp 1x, img/hero/hero-tablet-1@2x.webp 2x" width="768" height="1034" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-1@1x.jpg 1x, img/hero/hero-tablet-1@2x.jpg 2x" width="768" height="1034" type="image/jpg">
+                  <source srcset="img/hero/hero-mobile-1@1x.webp 1x, img/hero/hero-mobile-1@2x.webp 2x" type="image/webp">
+                  <img class="hero__img" src="img/hero/hero-mobile-1@1x.jpg" srcset="img/hero/hero-mobile-1@2x.jpg 2x" width="320" height="568" alt="Вид на красивые вершины гор Кавказа.">
+                </picture>
+              </div>
               <div class="hero__inner">
                 <span>Захватывающие вершины Кавказа</span>
                 <p>В сопровождении опытных гидов вы пройдёте через потрясающие ландшафты и совершите восход на вершину горы Чегет.</p>
@@ -67,15 +69,17 @@
                 </div>
               </div>
             </li>
-            <li class="hero__item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-2@1x.webp 1x, img/hero/hero-desktop-2@2x.webp 2x" width="1440" height="800" type="image/webp">
-                <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-2@1x.jpg 1x, img/hero/hero-desktop-2@2x.jpg 2x" width="1440" height="800" type="image/jpg">
-                <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-2@1x.webp 1x, img/hero/hero-tablet-2@2x.webp 2x" width="768" height="1034" type="image/webp">
-                <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-2@1x.jpg 1x, img/hero/hero-tablet-2@2x.jpg 2x" width="768" height="1034" type="image/jpg">
-                <source srcset="img/hero/hero-mobile-2@1x.webp 1x, img/hero/hero-mobile-2@2x.webp 2x" type="image/webp">
-                <img class="hero__img" src="img/hero/hero-mobile-2@1x.jpg" srcset="img/hero/hero-mobile-2@2x.jpg 2x" width="320" height="568" alt="Вид на красивые вершины гор Кавказа.">
-              </picture>
+            <li class="hero__item swiper-slide">
+              <div class="hero__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-2@1x.webp 1x, img/hero/hero-desktop-2@2x.webp 2x" width="1440" height="800" type="image/webp">
+                  <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-2@1x.jpg 1x, img/hero/hero-desktop-2@2x.jpg 2x" width="1440" height="800" type="image/jpg">
+                  <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-2@1x.webp 1x, img/hero/hero-tablet-2@2x.webp 2x" width="768" height="1034" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-2@1x.jpg 1x, img/hero/hero-tablet-2@2x.jpg 2x" width="768" height="1034" type="image/jpg">
+                  <source srcset="img/hero/hero-mobile-2@1x.webp 1x, img/hero/hero-mobile-2@2x.webp 2x" type="image/webp">
+                  <img class="hero__img" src="img/hero/hero-mobile-2@1x.jpg" srcset="img/hero/hero-mobile-2@2x.jpg 2x" width="320" height="568" alt="Вид на красивые вершины гор Кавказа.">
+                </picture>
+              </div>
               <div class="hero__inner">
                 <span>Невероятная природа Камчатки</span>
                 <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
@@ -86,15 +90,17 @@
                 </div>
               </div>
             </li>
-            <li class="hero__item">
-              <picture>
-                <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-3@1x.webp 1x, img/hero/hero-desktop-3@2x.webp 2x" width="1440" height="800" type="image/webp">
-                <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-3@1x.jpg 1x, img/hero/hero-desktop-3@2x.jpg 2x" width="1440" height="800" type="image/jpg">
-                <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-3@1x.webp 1x, img/hero/hero-tablet-3@2x.webp 2x" width="768" height="1034" type="image/webp">
-                <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-3@1x.jpg 1x, img/hero/hero-tablet-3@2x.jpg 2x" width="768" height="1034" type="image/jpg">
-                <source srcset="img/hero/hero-mobile-3@1x.webp 1x, img/hero/hero-mobile-3@2x.webp 2x" type="image/webp">
-                <img class="hero__img" src="img/hero/hero-mobile-3@1x.jpg" srcset="img/hero/hero-mobile-3@2x.jpg 2x" width="320" height="568" alt="Вид на красивые вершины гор Кавказа.">
-              </picture>
+            <li class="hero__item swiper-slide">
+              <div class="hero__img-wrapper">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-3@1x.webp 1x, img/hero/hero-desktop-3@2x.webp 2x" width="1440" height="800" type="image/webp">
+                  <source media="(min-width: 1440px)" srcset="img/hero/hero-desktop-3@1x.jpg 1x, img/hero/hero-desktop-3@2x.jpg 2x" width="1440" height="800" type="image/jpg">
+                  <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-3@1x.webp 1x, img/hero/hero-tablet-3@2x.webp 2x" width="768" height="1034" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/hero/hero-tablet-3@1x.jpg 1x, img/hero/hero-tablet-3@2x.jpg 2x" width="768" height="1034" type="image/jpg">
+                  <source srcset="img/hero/hero-mobile-3@1x.webp 1x, img/hero/hero-mobile-3@2x.webp 2x" type="image/webp">
+                  <img class="hero__img" src="img/hero/hero-mobile-3@1x.jpg" srcset="img/hero/hero-mobile-3@2x.jpg 2x" width="320" height="568" alt="Вид на красивые вершины гор Кавказа.">
+                </picture>
+              </div>
               <div class="hero__inner">
                 <span>Магические пейзажи Алтайского Края</span>
                 <p>Алтайский трекинг-тур – это захватывающее приключение с посещением магических и захватывающих дух ландшафтов Алтайских гор.</p>
@@ -122,10 +128,18 @@
 
       <section class="tours tours--decor" data-test="tours">
         <div class="tours__wrapper wrapper">
-          <h2 class="tours__title title">Ближайшие туры</h2>
-          <div class="tours__swiper">
-            <ul class="tours__list">
-              <li class="tours__item tours-card">
+          <h2 class="tours__title title" data-tours="Ближайшие туры">Ближайшие туры</h2>
+          <div class="tours__buttons buttons">
+            <button class="tours__button tours__button--prev button button--prev">
+              <span class="visually-hidden">Показать предыдущий слайд.</span>
+            </button>
+            <button class="tours__button tours__button--next button button--next">
+              <span class="visually-hidden">Показать следующий слайд.</span>
+            </button>
+          </div>
+          <div class="tours__swiper swiper">
+            <ul class="tours__list swiper-wrapper">
+              <li class="tours__item tours-card swiper-slide">
                 <div class="tours-card__wrapper">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/tours/tours-desktop-1@1x.webp 1x, img/tours/tours-desktop-1@2x.webp 2x" width="380" height="416" type="image/webp">
@@ -136,36 +150,38 @@
                     <img class="tours-card__img" src="img/tours/tours-mobile-1@1x.jpg" srcset="img/tours/tours-mobile-1@2x.jpg 2x" width="290" height="416" alt="Вид на красивые вершины гор Кавказа.">
                   </picture>
                 </div>
-                <div class="tours__place">
-                  <span class="tours__location">Кавказ</span>
-                  <p class="tours__duration">
-                    <span class="tours__lasting tours__lasting--day">4 дня</span>
-                    <span class="tours__lasting tours__lasting--night">3 ночи</span>
-                  </p>
-                </div>
-                <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h3>
-                <div class="tours__info tours-info">
-                  <dl class="tours-info__list raiting">
-                    <dt class="tours-info__title">Сложность:</dt>
-                    <dd class="tours-info__description">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="1">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="2">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="3">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="4">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="5">
-                    </dd>
-                  </dl>
-                  <dl class="tours-info__list">
-                    <dt class="tours-info__title">Даты набора:</dt>
-                    <dd class="tours-info__description">12.06–19.06</dd>
-                  </dl>
-                  <dl class="tours-info__list">
-                    <dt class="tours-info__title">Группа:</dt>
-                    <dd class="tours-info__description">до 15 чел.</dd>
-                  </dl>
+                <div class="tours-card__content-wrapper">
+                  <div class="tours__place">
+                    <span class="tours__location">Кавказ</span>
+                    <p class="tours__duration">
+                      <span class="tours__lasting tours__lasting--day">4 дня</span>
+                      <span class="tours__lasting tours__lasting--night">3 ночи</span>
+                    </p>
+                  </div>
+                  <h3 class="tours-card__title">Путешествие вокруг Эльбруса</h3>
+                  <div class="tours__info tours-info">
+                    <dl class="tours-info__list raiting">
+                      <dt class="tours-info__title">Сложность:</dt>
+                      <dd class="tours-info__description">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="1">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="2">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="3">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="4">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="5">
+                      </dd>
+                    </dl>
+                    <dl class="tours-info__list">
+                      <dt class="tours-info__title">Даты набора:</dt>
+                      <dd class="tours-info__description">12.06–19.06</dd>
+                    </dl>
+                    <dl class="tours-info__list">
+                      <dt class="tours-info__title">Группа:</dt>
+                      <dd class="tours-info__description">до 15 чел.</dd>
+                    </dl>
+                  </div>
                 </div>
               </li>
-              <li class="tours__item tours-card">
+              <li class="tours__item tours-card swiper-slide">
                 <div class="tours-card__wrapper">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/tours/tours-desktop-2@1x.webp 1x, img/tours/tours-desktop-2@2x.webp 2x" width="380" height="416" type="image/webp">
@@ -176,36 +192,38 @@
                     <img class="tours-card__img" src="img/tours/tours-mobile-2@1x.jpg" srcset="img/tours/tours-mobile-2@2x.jpg 2x" width="290" height="416" alt="Вид на красивые вершины гор Кавказа.">
                   </picture>
                 </div>
-                <div class="tours__place">
-                  <span class="tours__location">Алтай</span>
-                  <p class="tours__duration">
-                    <span class="tours__lasting tours__lasting--day">14 дней</span>
-                    <span class="tours__lasting tours__lasting--night">13 ночей</span>
-                  </p>
-                </div>
-                <h3 class="tours-card__title">Путь к подножию Белухи</h3>
-                <div class="tours__info tours-info">
-                  <dl class="tours-info__list raiting">
-                    <dt class="tours-info__title">Сложность:</dt>
-                    <dd class="tours-info__description">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="1">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="2">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="3">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="4">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="5">
-                    </dd>
-                  </dl>
-                  <dl class="tours-info__list">
-                    <dt class="tours-info__title">Даты набора:</dt>
-                    <dd class="tours-info__description">14.06–23.06</dd>
-                  </dl>
-                  <dl class="tours-info__list">
-                    <dt class="tours-info__title">Группа:</dt>
-                    <dd class="tours-info__description">до 25 чел.</dd>
-                  </dl>
+                <div class="tours-card__content-wrapper">
+                  <div class="tours__place">
+                    <span class="tours__location">Алтай</span>
+                    <p class="tours__duration">
+                      <span class="tours__lasting tours__lasting--day">14 дней</span>
+                      <span class="tours__lasting tours__lasting--night">13 ночей</span>
+                    </p>
+                  </div>
+                  <h3 class="tours-card__title">Путь к подножию Белухи</h3>
+                  <div class="tours__info tours-info">
+                    <dl class="tours-info__list raiting">
+                      <dt class="tours-info__title">Сложность:</dt>
+                      <dd class="tours-info__description">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="1">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="2">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="3">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="4">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="5">
+                      </dd>
+                    </dl>
+                    <dl class="tours-info__list">
+                      <dt class="tours-info__title">Даты набора:</dt>
+                      <dd class="tours-info__description">14.06–23.06</dd>
+                    </dl>
+                    <dl class="tours-info__list">
+                      <dt class="tours-info__title">Группа:</dt>
+                      <dd class="tours-info__description">до 25 чел.</dd>
+                    </dl>
+                  </div>
                 </div>
               </li>
-              <li class="tours__item tours-card">
+              <li class="tours__item tours-card swiper-slide">
                 <div class="tours-card__wrapper">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/tours/tours-desktop-3@1x.webp 1x, img/tours/tours-desktop-3@2x.webp 2x" width="380" height="416" type="image/webp">
@@ -216,36 +234,38 @@
                     <img class="tours-card__img" src="img/tours/tours-mobile-3@1x.jpg" srcset="img/tours/tours-mobile-3@2x.jpg 2x" width="290" height="416" alt="Вид на красивые вершины гор Кавказа.">
                   </picture>
                 </div>
-                <div class="tours__place">
-                  <span class="tours__location">Адыгея</span>
-                  <p class="tours__duration">
-                    <span class="tours__lasting tours__lasting--day">7 дней</span>
-                    <span class="tours__lasting tours__lasting--night">6 ночей</span>
-                  </p>
-                </div>
-                <h3 class="tours-card__title">Через Фишт к Чёрному морю и обратно</h3>
-                <div class="tours__info tours-info">
-                  <dl class="tours-info__list raiting">
-                    <dt class="tours-info__title">Сложность:</dt>
-                    <dd class="tours-info__description">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="1">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="2">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="3">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="4">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="5">
-                    </dd>
-                  </dl>
-                  <dl class="tours-info__list">
-                    <dt class="tours-info__title">Даты набора:</dt>
-                    <dd class="tours-info__description">15.07–19.07</dd>
-                  </dl>
-                  <dl class="tours-info__list">
-                    <dt class="tours-info__title">Группа:</dt>
-                    <dd class="tours-info__description">до 22 чел.</dd>
-                  </dl>
+                <div class="tours-card__content-wrapper">
+                  <div class="tours__place">
+                    <span class="tours__location">Адыгея</span>
+                    <p class="tours__duration">
+                      <span class="tours__lasting tours__lasting--day">7 дней</span>
+                      <span class="tours__lasting tours__lasting--night">6 ночей</span>
+                    </p>
+                  </div>
+                  <h3 class="tours-card__title">Через Фишт к Чёрному морю и обратно</h3>
+                  <div class="tours__info tours-info">
+                    <dl class="tours-info__list raiting">
+                      <dt class="tours-info__title">Сложность:</dt>
+                      <dd class="tours-info__description">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="1">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="2">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="3">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="4">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="5">
+                      </dd>
+                    </dl>
+                    <dl class="tours-info__list">
+                      <dt class="tours-info__title">Даты набора:</dt>
+                      <dd class="tours-info__description">15.07–19.07</dd>
+                    </dl>
+                    <dl class="tours-info__list">
+                      <dt class="tours-info__title">Группа:</dt>
+                      <dd class="tours-info__description">до 22 чел.</dd>
+                    </dl>
+                  </div>
                 </div>
               </li>
-              <li class="tours__item tours-card">
+              <li class="tours__item tours-card swiper-slide">
                 <div class="tours-card__wrapper">
                   <picture>
                     <source media="(min-width: 1440px)" srcset="img/tours/tours-desktop-4@1x.webp 1x, img/tours/tours-desktop-4@2x.webp 2x" width="380" height="416" type="image/webp">
@@ -256,111 +276,135 @@
                     <img class="tours-card__img" src="img/tours/tours-mobile-4@1x.jpg" srcset="img/tours/tours-mobile-4@2x.jpg 2x" width="290" height="416" alt="Вид на красивые вершины гор Кавказа.">
                   </picture>
                 </div>
-                <div class="tours__place">
-                  <span class="tours__location">Урал</span>
-                  <p class="tours__duration">
-                    <span class="tours__lasting tours__lasting--day">9 дней</span>
-                    <span class="tours__lasting tours__lasting--night">10 ночей</span>
-                  </p>
-                </div>
-                <h3 class="tours-card__title">Восхождение Манарага</h3>
-                <div class="tours__info tours-info">
-                  <dl class="tours-info__list raiting">
-                    <dt class="tours-info__title">Сложность:</dt>
-                    <dd class="tours-info__description">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="1">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="2">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="3">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="4">
-                      <input class="raiting__star" type="radio" name="stars" aria-label="5">
-                    </dd>
-                  </dl>
-                  <dl class="tours-info__list">
-                    <dt class="tours-info__title">Даты набора:</dt>
-                    <dd class="tours-info__description">12.07–19.07</dd>
-                  </dl>
-                  <dl class="tours-info__list">
-                    <dt class="tours-info__title">Группа:</dt>
-                    <dd class="tours-info__description">до 7 чел.</dd>
-                  </dl>
+                <div class="tours-card__content-wrapper">
+                  <div class="tours__place">
+                    <span class="tours__location">Урал</span>
+                    <p class="tours__duration">
+                      <span class="tours__lasting tours__lasting--day">9 дней</span>
+                      <span class="tours__lasting tours__lasting--night">10 ночей</span>
+                    </p>
+                  </div>
+                  <h3 class="tours-card__title">Восхождение Манарага</h3>
+                  <div class="tours__info tours-info">
+                    <dl class="tours-info__list raiting">
+                      <dt class="tours-info__title">Сложность:</dt>
+                      <dd class="tours-info__description">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="1">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="2">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="3">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="4">
+                        <input class="raiting__star" type="radio" name="stars" aria-label="5">
+                      </dd>
+                    </dl>
+                    <dl class="tours-info__list">
+                      <dt class="tours-info__title">Даты набора:</dt>
+                      <dd class="tours-info__description">12.07–19.07</dd>
+                    </dl>
+                    <dl class="tours-info__list">
+                      <dt class="tours-info__title">Группа:</dt>
+                      <dd class="tours-info__description">до 7 чел.</dd>
+                    </dl>
+                  </div>
                 </div>
               </li>
             </ul>
           </div>
-          <div class="tours__buttons buttons">
-            <button class="buttons__item button button--prev">
-              <span class="visually-hidden">Показать предыдущий слайд.</span>
-            </button>
-            <button class="buttons__item button button--next">
-              <span class="visually-hidden">Показать следующий слайд.</span>
-            </button>
-          </div>
           <a class="tours__link" href="#">Показать все туры</a>
       </section>
 
-      <section class="training">
+      <section class="training" data-test="training">
         <div class="training__wrapper wrapper">
-          <h2 class="training__title title">Обучение</h2>
+          <h2 class="training__title title" data-training="Обучение">Обучение</h2>
           <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
 
           <section class="training__instructors instructors">
             <h3 class="instructors__title">Наши инструкторы</h3>
 
             <div class="instructors__buttons buttons">
-              <button class="buttons__item button button--prev">
+              <button class="instructors__button instructors__button--prev button button--prev">
                 <span class="visually-hidden">Показать предыдущий слайд.</span>
               </button>
-              <button class="buttons__item button button--next">
+              <button class="instructors__button instructors__button--next button button--next">
                 <span class="visually-hidden">Показать следующий слайд.</span>
               </button>
             </div>
 
-            <div class="instructors__swiper">
-              <ul class="instructors__list">
-                <li class="instructors__item">
-                  <div>
+            <div class="instructors__swiper swiper">
+              <ul class="instructors__list swiper-wrapper">
+                <li class="instructors__item swiper-slide">
+                  <div class="instructors__img-wrapper">
                     <picture>
-                      <img>
+                      <source srcset="img/instructors/instructor-photo-1@1x.webp 1x, img/instructors/instructor-photo-1@2x.webp 2x" type="image/webp">
+                      <img class="instructors__img" src="img/instructors/instructor-photo-1@1x.jpg" srcset="img/instructors/instructor-photo-1@2x.jpg 2x" width="260" height="200" alt="Фото инструктора Александра Прокофьева.">
                     </picture>
                   </div>
-                  <h4>Александр Прокофьев</h4>
-                  <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                  <div class="instructors__info">
+                    <h4>Александр Прокофьев</h4>
+                    <p>Строгий и внимательный инструктор, весёлый и общительный человек. Любит природу.</p>
+                    <a class="instructors__link" href="#">
+                      <span class="visually-hidden">Александр Прокофьев в вконтакте.</span>
+                    </a>
+                  </div>
                 </li>
-                <li class="instructors__item">
-                  <div>
+                <li class="instructors__item swiper-slide">
+                  <div class="instructors__img-wrapper">
                     <picture>
-                      <img>
+                      <source srcset="img/instructors/instructor-photo-2@1x.webp 1x, img/instructors/instructor-photo-2@2x.webp 2x" type="image/webp">
+                      <img class="instructors__img" src="img/instructors/instructor-photo-2@1x.jpg" srcset="img/instructors/instructor-photo-2@2x.jpg 2x" width="260" height="200" alt="Фото инструктора Светланы Афиногеновой.">
                     </picture>
                   </div>
-                  <h4>Светлана Афиногенова</h4>
-                  <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                  <div class="instructors__info">
+                    <h4>Светлана Афиногенова</h4>
+                    <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать — в этом назначение жизни.</p>
+                    <a class="instructors__link" href="#">
+                      <span class="visually-hidden">Светлана Афиногенова в вконтакте.</span>
+                    </a>
+                  </div>
                 </li>
-                <li class="instructors__item">
-                  <div>
+                <li class="instructors__item swiper-slide">
+                  <div class="instructors__img-wrapper">
                     <picture>
-                      <img>
+                      <source srcset="img/instructors/instructor-photo-3@1x.webp 1x, img/instructors/instructor-photo-3@2x.webp 2x" type="image/webp">
+                      <img class="instructors__img" src="img/instructors/instructor-photo-3@1x.jpg" srcset="img/instructors/instructor-photo-3@2x.jpg 2x" width="260" height="200" alt="Фото инструктора Надежды Колесниченко.">
                     </picture>
                   </div>
-                  <h4>Надежда Колесниченко</h4>
-                  <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                  <div class="instructors__info">
+                    <h4>Надежда Колесниченко</h4>
+                    <p>Участники говорят, что Надежда ответственная, приятная в общении, и в поездках с ней чувствуешь себя спокойно и уверенно.</p>
+                    <a class="instructors__link" href="#">
+                      <span class="visually-hidden">Надежда Колесниченко в вконтакте.</span>
+                    </a>
+                  </div>
                 </li>
-                <li class="instructors__item">
-                  <div>
+                <li class="instructors__item swiper-slide">
+                  <div class="instructors__img-wrapper">
                     <picture>
-                      <img>
+                      <source srcset="img/instructors/instructor-photo-4@1x.webp 1x, img/instructors/instructor-photo-4@2x.webp 2x" type="image/webp">
+                      <img class="instructors__img" src="img/instructors/instructor-photo-4@1x.jpg" srcset="img/instructors/instructor-photo-4@2x.jpg 2x" width="260" height="200" alt="Фото инструктора Федора Кайгородова.">
                     </picture>
                   </div>
-                  <h4>Федор Кайгородов</h4>
-                  <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                  <div class="instructors__info">
+                    <h4>Федор Кайгородов</h4>
+                    <p>Опыт походов: Ходит в походы с 2001 года. В России побывал в горных районах Хибины, Архыз, много путешествует по Европе.</p>
+                    <a class="instructors__link" href="#">
+                      <span class="visually-hidden">Федор Кайгородов в вконтакте.</span>
+                    </a>
+                  </div>
                 </li>
-                <li class="instructors__item">
-                  <div>
+                <li class="instructors__item swiper-slide">
+                  <div class="instructors__img-wrapper">
                     <picture>
-                      <img>
+                      <source srcset="img/instructors/instructor-photo-5@1x.webp 1x, img/instructors/instructor-photo-5@2x.webp 2x" type="image/webp">
+                      <img class="instructors__img" src="img/instructors/instructor-photo-5@1x.jpg" srcset="img/instructors/instructor-photo-5@2x.jpg 2x" width="260" height="200" alt="Фото инструктора Даниэля Васнецова.">
                     </picture>
                   </div>
-                  <h4>Даниэль Васнецов</h4>
-                  <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                  <div class="instructors__info">
+                    <h4>Даниэль Васнецов</h4>
+                    <p>Покорял самые сложные вершины. Выбирался из под лавин, дружит с медведями и не только.</p>
+                    <a class="instructors__link" href="#">
+                      <span class="visually-hidden">Даниэль Васнецов в вконтакте.</span>
+                    </a>
+                  </div>
                 </li>
               </ul>
             </div>
@@ -387,11 +431,11 @@
 
       <section class="about about--background" data-test="about">
         <div class="about__wrapper">
-          <h2 class="about__title">О нас</h2>
+          <h2 class="about__title" data-about="О нас">О нас</h2>
           <ul class="about__list">
             <li class="about__item">
               <h3>История компании</h3>
-              <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить. Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+              <p>В далёком 2000 году мы начали заниматься туризмом — походы, поездки, восхождения, нам это настолько понравилось, что мы этим стали жить.  Спустя 5 лет, в 2005 году мы основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
             </li>
             <li class="about__item">
               <h3>Наша цель</h3>
@@ -538,7 +582,31 @@
       </section>
 
       <section class="gallery" data-test="gallery">
+        <div class="gallery__wrapper wrapper">
+          <h2 class="gallery__title">Фотогалерея</h2>
+          <p>Добавляйте фото в с хэштегом #лайфтур, а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+        </div>
+        <div class="gallery__container">
 
+        </div>
+      </section>
+
+      <section class="page-form" data-test="form">
+        <div class="page-form__wrapper">
+          <h2>Остались вопросы?</h2>
+          <p>Заполните форму и наш оператор свяжется с вами для консультации.</p>
+          <form class="page-form__feedback form" method="post" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
+            <label>
+              <input type="number" name="phone" placeholder="Телефон" required>
+              <span class="visually-hidden">Телефон</span>
+            </label>
+            <label>
+              <input type="email" name="email" placeholder="Email" required>
+              <span class="visually-hidden">Email</span>
+            </label>
+            <button class="form__button" type="submit">Отправить</button>
+          </form>
+        </div>
       </section>
 
     </main>

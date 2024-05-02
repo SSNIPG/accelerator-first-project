@@ -1,0 +1,54 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 35px;
+  background-color: #0266c1;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 14px;
+    height: 9px;
+    background-color: #ffffff;
+    mask-image: url("/__spritemap#sprite-arrow-right-view");
+  }
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &:hover:not(:disabled) {
+    border: 1px solid #1c3374;
+  }
+
+  &:hover:not(:disabled),
+  &:focus:not(:disabled) {
+    background-color: #ffffff;
+
+    &::before {
+      background-color: #1c3374;
+    }
+  }
+
+  // &:focus:not(:disabled) {
+  //   border-color: transparent;
+  // }
+
+  &:active:not(:disabled) {
+    background-color: #1c3374;
+
+    &::before {
+      background-color: #ffffff;
+    }
+  }
+}
+
+.button--disabled,
+.swiper-button-disabled {
+  background-color: #999999;
+  pointer-events: none;
+}

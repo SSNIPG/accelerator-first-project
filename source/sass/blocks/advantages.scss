@@ -43,9 +43,8 @@
   position: relative;
 }
 
->.advantages__buttons {
+.advantages__buttons {
   display: none;
-
   @media (min-width: $desktop-width) {
     display: block;
   }

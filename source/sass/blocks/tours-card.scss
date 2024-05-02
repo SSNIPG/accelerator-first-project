@@ -5,6 +5,10 @@
   justify-content: end;
   min-height: 416px;
   padding: 30px 20px;
+
+  @media (min-width: $desktop-width) {
+    width: 380px;
+  }
 }
 
 .tours-card__wrapper {
@@ -21,10 +25,25 @@
 }
 
 .tours-card__title {
+  position: relative;
   margin: 0;
   margin-bottom: 31px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   color: #ffffff;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: -16px;
+    content: "";
+    width: 80px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  @media (min-width: $tablet-width) {
+    max-width: 240px;
+  }
 }
