@@ -1,12 +1,13 @@
 .advantage {
-  padding: 82px 10px 20px 10px;
+  padding: 82px 10px 19px;
+  outline: 1px solid rgba(2, 102, 193, 0.1);
 
   h3 {
     font-size: 14px;
     line-height: 14px;
     font-weight: 600;
     margin: 0;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
   }
 
   p {
@@ -23,7 +24,7 @@
     content: "";
     width: 42px;
     height: 42px;
-    outline: 1px solid #0266c1;
+    border: 1px solid #0266c1;
     background-size: 24px 24px;
     background-repeat: no-repeat;
     background-position: center;
@@ -54,6 +55,9 @@
   }
 
   &--nature {
+    h3 {
+      padding: 0 48px;
+    }
     &::before {
       background-image: url("/__spritemap#sprite-leaf-view");
     }
@@ -61,7 +65,7 @@
 
   @media (min-width: $tablet-width) {
     width: 324px;
-    padding: 103px 20px 30px 20px;
+    padding: 103px 20px 30px;
 
     h3 {
       font-size: 16px;
@@ -78,10 +82,17 @@
       width: 48px;
       height: 48px;
     }
+
+    &--nature {
+      padding-bottom: 36px;
+      h3 {
+        padding: 0 40px;
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
-    padding: 124px 20px 40px 20px;
+    padding: 124px 20px 40px;
 
     h3 {
       font-size: 18px;
@@ -92,6 +103,14 @@
       top: 40px;
       width: 54px;
       height: 54px;
+    }
+
+    &--nature {
+      padding-bottom: 62px;
+
+      h3 {
+        padding: 0;
+      }
     }
   }
 }
