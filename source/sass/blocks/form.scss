@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    column-gap: 30px;
+  }
+}
+
+.form__label {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-basis: 360px;
+  }
+}
+
+.form__input {
+  padding: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  width: 100%;
+  min-height: 50px;
+  background-color: #ffffff;
+  outline: 1px solid rgba(2, 102, 193, 0.1);
+  border: none;
+
+  ::placeholder {
+    color: rgba(45, 56, 63, 0.5);
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 56px;
+    padding: 15px 30px;
+    border-radius: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+
+  }
+}
+
+.form__button {
+  padding: 21px 19px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  border: none;
+  background-color: #0266c1;
+  color: #ffffff;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border-radius: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-basis: 180px;
+    padding: 20px 10px;
+    border-radius: 0;
+  }
+}
