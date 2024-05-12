@@ -18,7 +18,9 @@
   }
 
   &--next {
-    transform: rotate(180deg);
+    &::before {
+      transform: rotate(180deg);
+    }
   }
 
   &:hover:not(:disabled) {
@@ -33,10 +35,6 @@
       background-color: #1c3374;
     }
   }
-
-  // &:focus:not(:disabled) {
-  //   border-color: transparent;
-  // }
 
   &:active:not(:disabled) {
     background-color: #1c3374;

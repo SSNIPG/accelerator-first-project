@@ -71,6 +71,18 @@
 .footer__phone {
   display: none;
 
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: #0266c1;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
+
   @media (min-width: $desktop-width) {
     display: block;
     font-size: 18px;
@@ -125,7 +137,7 @@
   text-decoration: none;
   color: inherit;
 
-  &:hover:not(:active, :focus) {
+  &:hover:not(:active):not(:focus) {
     &::after {
       position: absolute;
       bottom: 0;

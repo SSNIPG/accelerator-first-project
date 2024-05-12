@@ -58,7 +58,7 @@
   font-weight: 800;
   margin: 0;
   margin-bottom: 28px;
-  padding: 17px 0 0 0;
+  padding: 17px 0 0;
 
   &::before {
     position: absolute;
@@ -75,7 +75,7 @@
     font-size: 25px;
     line-height: 25px;
     margin-bottom: 20px;
-    padding: 20px 0 0 0;
+    padding: 20px 0 0;
 
     &::before {
       bottom: 0;
@@ -88,7 +88,7 @@
     font-size: 35px;
     line-height: 35px;
     margin-bottom: 24px;
-    padding: 23px 0 0 0;
+    padding: 23px 0 0;
 
     &::before {
       bottom: -3px;
@@ -131,24 +131,6 @@
     background-color: #2d383f;
   }
 
-  &--phone {
-    &::before {
-      mask-image: url("/__spritemap#sprite-phone-view");
-    }
-  }
-
-  &--mail {
-    &::before {
-      mask-image: url("/__spritemap#sprite-mail-view");
-    }
-  }
-
-  &--address {
-    &::before {
-      mask-image: url("/__spritemap#sprite-marker-map-view");
-    }
-  }
-
   @media (min-width: $tablet-width) {
     padding-left: 34px;
     flex-shrink: 0;
@@ -181,6 +163,24 @@
       top: 50%;
       transform: translateY(-50%);
     }
+  }
+}
+
+.contacts__item--phone {
+  &::before {
+    mask-image: url("/__spritemap#sprite-phone-view");
+  }
+}
+
+.contacts__item--mail {
+  &::before {
+    mask-image: url("/__spritemap#sprite-mail-view");
+  }
+}
+
+.contacts__item--address {
+  &::before {
+    mask-image: url("/__spritemap#sprite-marker-map-view");
   }
 }
 
@@ -225,6 +225,18 @@
   display: block;
   text-decoration: none;
   color: inherit;
+
+  &:hover {
+    color: rgba(2, 102, 193, 0.1);
+  }
+
+  &:focus {
+    color: #0266c1;
+  }
+
+  &:active {
+    color: #1c3374;
+  }
 }
 
 .contacts__map {

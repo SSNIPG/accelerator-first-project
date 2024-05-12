@@ -33,6 +33,9 @@ const getSlider = () => {
           slidesPerView: 1,
           spaceBetween: 40,
         },
+        1440: {
+          allowTouchMove: false,
+        },
       },
       pagination: {
         el: '.hero__pagination',
@@ -110,7 +113,6 @@ const getSlider = () => {
           loop: false,
           parallax: true,
           loopAddBlankSlides: false,
-
         },
         1440: {
           slidesPerView: 'auto',

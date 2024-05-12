@@ -51,7 +51,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 40px;
-  padding: 18px 0 0 0;
+  padding: 18px 0 0;
   font-size: 22px;
   font-weight: 800;
 
@@ -158,22 +158,21 @@
     width: 20px;
     height: 20px;
   }
+}
 
-  &--day {
-    &::before {
-      background-image: url("/__spritemap#sprite-sun-view");
-    }
+.tours__lasting--day {
+  &::before {
+    background-image: url("/__spritemap#sprite-sun-view");
   }
+}
 
-  &--night {
-    &::before {
-      background-image: url("/__spritemap#sprite-moon-view");
-    }
+.tours__lasting--night {
+  &::before {
+    background-image: url("/__spritemap#sprite-moon-view");
   }
 }
 
 .tours__buttons {
-
   @media (min-width: $tablet-width) {
     position: absolute;
     top: 20px;

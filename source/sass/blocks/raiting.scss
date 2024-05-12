@@ -1,0 +1,13 @@
+.raiting__star {
+  position: relative;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  mask-image: url("/__spritemap#sprite-raiting-star-view");
+  background-color: #ffffff;
+}
+
+.raiting__star--active {
+  mask-image: url("/__spritemap#sprite-active-star-view");
+  background-color: #ffffff;
+}

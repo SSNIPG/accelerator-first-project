@@ -45,30 +45,6 @@
     background-repeat: no-repeat;
   }
 
-  &--route {
-    &::before {
-      background-image: url("/__spritemap#sprite-map-view");
-    }
-  }
-
-  &--equipment {
-    &::before {
-      background-image: url("/__spritemap#sprite-boots-view");
-    }
-  }
-
-  &--nature {
-    &::before {
-      background-image: url("/__spritemap#sprite-tree-view");
-    }
-  }
-
-  &--mountains {
-    &::before {
-      background-image: url("/__spritemap#sprite-mountain-view");
-    }
-  }
-
   @media (min-width: $tablet-width) {
     padding-left: 35px;
 
@@ -92,6 +68,14 @@
     flex-basis: 33%;
     display: flex;
 
+    &::after {
+      display: block;
+      left: 20px;
+      top: auto;
+      transform: none;
+      bottom: -14px;
+    }
+
     &::before {
       left: 10px;
     }
@@ -100,6 +84,36 @@
       flex-basis: 440px;
       flex-shrink: 0;
     }
+  }
+}
+
+.training-list__item--route {
+  &::before {
+    background-image: url("/__spritemap#sprite-map-view");
+  }
+}
+
+.training-list__item--equipment {
+  &::before {
+    background-image: url("/__spritemap#sprite-boots-view");
+  }
+}
+
+.training-list__item--nature {
+  &::before {
+    background-image: url("/__spritemap#sprite-tree-view");
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: 0;
+    }
+  }
+}
+
+.training-list__item--mountains {
+  &::before {
+    background-image: url("/__spritemap#sprite-mountain-view");
   }
 }
 
