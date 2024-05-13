@@ -53,9 +53,6 @@
 
 .contacts__title {
   position: relative;
-  font-size: 22px;
-  line-height: 22px;
-  font-weight: 800;
   margin: 0;
   margin-bottom: 28px;
   padding: 17px 0 0;
@@ -72,8 +69,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 25px;
-    line-height: 25px;
     margin-bottom: 20px;
     padding: 20px 0 0;
 
@@ -85,8 +80,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 35px;
-    line-height: 35px;
     margin-bottom: 24px;
     padding: 23px 0 0;
 
@@ -257,7 +250,3 @@
   height: 100%;
   width: 100%;
 }
-
-// .contacts__bottom {
-
-// }

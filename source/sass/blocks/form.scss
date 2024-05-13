@@ -27,10 +27,9 @@
   width: 100%;
   min-height: 50px;
   background-color: #ffffff;
-  outline: 1px solid rgba(2, 102, 193, 0.1);
-  border: none;
+  border: 1px solid rgba(2, 102, 193, 0.1);
 
-  ::placeholder {
+  &::placeholder {
     color: rgba(45, 56, 63, 0.5);
   }
 
@@ -39,6 +38,10 @@
     padding: 15px 30px;
     border-radius: 2px;
   }
+}
+
+.form__input--error {
+  border: 5px solid #ff121f;
 }
 
 .form__button {

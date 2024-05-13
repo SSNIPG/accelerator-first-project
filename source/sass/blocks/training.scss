@@ -30,7 +30,6 @@
 .training__title {
   position: relative;
   font-size: 22px;
-  line-height: 22px;
   font-weight: 800;
   padding: 16px 0 0;
   margin: 0;
@@ -48,10 +47,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    font-size: 25px;
-    line-height: 25px;
     margin-bottom: 33px;
-    padding: 20px 100px 0 0;
+    padding: 20px 0 0;
 
     &::before {
       bottom: 0;
@@ -61,10 +58,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 35px;
-    line-height: 35px;
     margin-bottom: 32px;
-    padding: 23px 100px 0 0;
+    padding: 23px 0 0;
 
     &::before {
       bottom: -3px;

@@ -83,13 +83,19 @@
       margin: 0 auto;
       margin-bottom: 35px;
     }
+
+    &--second {
+      min-height: 387px;
+      justify-content: flex-end;
+      margin-bottom: 45px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     justify-content: flex-end;
     width: 1200px;
     min-height: 640px;
-    padding-right: 420px;
+    padding-right: 256px;
     text-align: left;
 
     span {
@@ -102,6 +108,11 @@
       width: 420px;
       margin: 0;
       margin-bottom: 35px;
+    }
+
+    &--second {
+      margin-bottom: 0;
+      padding-right: 390px;
     }
   }
 }
@@ -196,6 +207,25 @@
 
   @media (min-width: $desktop-width) {
     height: 800px;
+  }
+}
+
+.hero__img-container {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 442px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    right: 120px;
+    top: 187px;
+    z-index: -1;
+    width: 410px;
+    height: 459px;
   }
 }
 

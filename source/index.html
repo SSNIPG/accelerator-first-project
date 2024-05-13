@@ -4,7 +4,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LIFETOUR - компания которая знает, что такое правильный отдых.">
     <title>Travel</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="img/png" href="img/favicon.png">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
@@ -80,7 +83,7 @@
                   <img class="hero__img" src="img/hero/hero-mobile-2@1x.jpg" srcset="img/hero/hero-mobile-2@2x.jpg 2x" width="320" height="568" alt="Вид на горы Камчатки.">
                 </picture>
               </div>
-              <div class="hero__inner">
+              <div class="hero__inner hero__inner--second">
                 <span>Невероятная природа Камчатки</span>
                 <p>Незабываемое приключение, во время которого вы отправитесь в путешествие по одному из самых нетронутых уголков дикой природы в мире.</p>
                 <a class="hero__link" href="#">Смотреть тур</a>
@@ -88,6 +91,13 @@
                   <span class="hero__info hero__info--duration">9 дней/10 ночей</span>
                   <span class="hero__info hero__info--level">Средняя сложность</span>
                 </div>
+              </div>
+              <div class="hero__img-container">
+                <picture>
+                  <source media="(min-width: 1440px)" srcset="img/hero/photo-cards-desktop@1x.png 1x, img/hero/photo-cards-desktop@2x.png 2x" width="410" height="459" type="image/png">
+                  <source srcset="img/hero/photo-cards-tablet@1x.webp 1x, img/hero/photo-cards-tablet@1x.webp 2x" type="image/webp">
+                  <img class="hero__img-cards" src="img/hero/photo-cards-tablet@1x.png" srcset="img/hero/photo-cards-tablet@2x.png 2x" width="442" height="365" alt="Два фото на одном красивое горное озеро, на втором туристка поднимается по склону горы.">
+                </picture>
               </div>
             </li>
             <li class="hero__item swiper-slide">
@@ -323,10 +333,8 @@
         <div class="training__wrapper wrapper">
           <h2 class="training__title title" data-training="Обучение">Обучение</h2>
           <p>Обучение проводится квалифицированными специалистами, за плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и других.</p>
-
           <section class="training__instructors instructors">
             <h3 class="instructors__title">Наши инструкторы</h3>
-
             <div class="instructors__buttons buttons">
               <button class="instructors__button instructors__button--prev button button--prev" type="button">
                 <span class="visually-hidden">Показать предыдущий слайд.</span>
@@ -335,7 +343,6 @@
                 <span class="visually-hidden">Показать следующий слайд.</span>
               </button>
             </div>
-
             <div class="instructors__swiper swiper">
               <ul class="instructors__list swiper-wrapper">
                 <li class="instructors__item swiper-slide">
@@ -438,7 +445,7 @@
 
       <section class="about about--background" data-test="about">
         <div class="about__wrapper">
-          <h2 class="about__title" data-about="О нас">О нас</h2>
+          <h2 class="about__title title" data-about="О нас">О нас</h2>
           <ul class="about__list">
             <li class="about__item">
               <h3>История компании</h3>
@@ -454,7 +461,7 @@
 
       <section class="reviews reviews--decor" data-test="reviews">
         <div class="reviews__wrapper wrapper">
-          <h2 class="reviews__title" data-reviews="Отзывы">Отзывы</h2>
+          <h2 class="reviews__title title" data-reviews="Отзывы">Отзывы</h2>
           <div class="reviews__buttons buttons">
             <button class="reviews__button reviews__button--prev button button--prev" type="button">
               <span class="visually-hidden">Показать предыдущий слайд.</span>
@@ -551,7 +558,7 @@
       </section>
 
       <section class="advantages advantages--position" data-test="adv">
-        <h2 class="advantages__title" data-advantages="Преимущества">Преимущества</h2>
+        <h2 class="advantages__title title" data-advantages="Преимущества">Преимущества</h2>
         <div class="advantages__swiper swiper">
           <ul class="advantages__list swiper-wrapper">
             <li class="advantages__item advantage advantage--security swiper-slide">
@@ -608,7 +615,7 @@
 
       <section class="gallery" data-test="gallery">
         <div class="gallery__wrapper wrapper">
-          <h2 class="gallery__title" data-gallery="Фотогалерея">Фотогалерея</h2>
+          <h2 class="gallery__title title" data-gallery="Фотогалерея">Фотогалерея</h2>
           <p>Добавляйте фото в с хэштегом #лайфтур,<br> а также отмечайте нас на фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
           <div class="gallery__buttons buttons">
           <button class="gallery__button gallery__button--prev button button--prev" type="button">
@@ -697,11 +704,11 @@
           <p>Заполните форму и наш оператор свяжется<br> &nbsp;с вами для консультации.</p>
           <form class="page-form__feedback form" method="post" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
             <label class="form__label">
-              <input class="form__input" name="phone" placeholder="Телефон" pattern="\+?[0-9\s\-\(\)]+" required>
+              <input class="form__input form__input--phone" type="text" name="phone" placeholder="Телефон" pattern="\+?[0-9\s\-\(\)]+" required>
               <span class="visually-hidden">Телефон</span>
             </label>
             <label class="form__label">
-              <input class="form__input" type="email" name="email" placeholder="Email" required>
+              <input class="form__input form__input--email" type="email" name="email" placeholder="Email" required>
               <span class="visually-hidden">Email</span>
             </label>
             <button class="form__button" type="submit">Отправить</button>
@@ -713,7 +720,7 @@
     <footer class="footer" data-test="footer">
       <section class="contacts">
         <div class="contacts__info">
-          <h2 class="contacts__title" data-contacts="Контакты">Контакты</h2>
+          <h2 class="contacts__title title" data-contacts="Контакты">Контакты</h2>
           <p>Свяжитесь с нами любым удобным<br> для вас способом или приходите<br> к нам в гости. Мы будем рады поделиться увлекательными историями и подобрать для вас тур.</p>
           <ul class="contacts__list">
             <li class="contacts__item contacts__item--phone">
@@ -794,5 +801,4 @@
     </footer>
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>

@@ -17,12 +17,6 @@
     mask-image: url("/__spritemap#sprite-arrow-right-view");
   }
 
-  &--next {
-    &::before {
-      transform: rotate(180deg);
-    }
-  }
-
   &:hover:not(:disabled) {
     border: 1px solid #1c3374;
   }
@@ -42,6 +36,12 @@
     &::before {
       background-color: #ffffff;
     }
+  }
+}
+
+.button--next {
+  &::before {
+    transform: rotate(180deg);
   }
 }
 

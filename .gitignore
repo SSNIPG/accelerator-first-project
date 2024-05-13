@@ -13,7 +13,6 @@ backstop_data
 .cache
 *.local
 package-lock.json
-fonts
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

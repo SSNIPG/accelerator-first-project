@@ -30,12 +30,6 @@
     background-position: center;
   }
 
-  &--nature {
-    h3 {
-      padding: 0 48px;
-    }
-  }
-
   @media (min-width: $tablet-width) {
     width: 324px;
     padding: 103px 20px 30px;
@@ -55,14 +49,6 @@
       width: 48px;
       height: 48px;
     }
-
-    &--nature {
-      padding-bottom: 36px;
-
-      h3 {
-        padding: 0 40px;
-      }
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -77,14 +63,6 @@
       top: 40px;
       width: 54px;
       height: 54px;
-    }
-
-    &--nature {
-      padding-bottom: 62px;
-
-      h3 {
-        padding: 0;
-      }
     }
   }
 }
@@ -114,7 +92,27 @@
 }
 
 .advantage--nature {
+  h3 {
+    padding: 0 48px;
+  }
+
   &::before {
     background-image: url("/__spritemap#sprite-leaf-view");
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 36px;
+
+    h3 {
+      padding: 0 40px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 62px;
+
+    h3 {
+      padding: 0;
+    }
   }
 }
