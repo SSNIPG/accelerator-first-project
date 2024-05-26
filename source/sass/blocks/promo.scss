@@ -5,9 +5,7 @@
 .promo__header {
   position: absolute;
   top: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
   width: 100%;
   height: 54px;
   padding: 0 15px;
@@ -23,6 +21,22 @@
     padding: 0 100px;
   }
 }
+
+.promo__header-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // &--content {
+  //   j
+  // }
+}
+
+// .promo__logo--hidden {
+//   // display: none;
+//   // z-index: -1;
+// }
 
 .promo__menu-button {
   position: relative;
@@ -65,6 +79,30 @@
 
   @media (min-width: $tablet-width) {
     height: 56px;
+  }
+}
+.promo__menu-button--active {
+  position: absolute;
+  width: 290px;
+  background-color: #316dc2;
+  color: #ffffff;
+
+  &::before {
+    right: 3px;
+    background-color: #ffffff;
+  }
+
+  &::after {
+    right: 16px;
+    width: 20px;
+    height: 20px;
+    background-color: #316dc2;
+    mask-image: url(/__spritemap#sprite-cross-view);
+  }
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 286px;
   }
 }
 
