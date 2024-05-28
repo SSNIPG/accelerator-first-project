@@ -1,0 +1,353 @@
+.about {
+  padding: 50px 15px;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 100px;
+  }
+}
+
+.about__container {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 40px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    flex-direction: row;
+    row-gap: 0;
+    column-gap: 40px;
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #316dc2;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+}
+
+.about__inner {
+  p {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    p {
+      font-size: 20px;
+      line-height: 26px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 702px;
+    flex-shrink: 0;
+    padding: 10px 0;
+
+    p {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}
+
+.about__aim {
+  h3 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 400;
+    color: #316dc2;
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 140px;
+
+    h3 {
+      margin-bottom: 29px;
+      font-size: 28px;
+      line-height: 28px;
+    }
+
+    p {
+      margin-bottom: 40px;
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 498px;
+    flex-shrink: 0;
+    padding: 0;
+    padding-top: 9.5px;
+
+    h3 {
+      font-size: 32px;
+      line-height: 36px;
+      margin-bottom: 40.5px;
+    }
+
+    p {
+      line-height: 26px;
+      margin-bottom: 50px;
+    }
+  }
+}
+
+.about__button {
+  position: relative;
+  width: 223px;
+  padding: 15px 38px 15px 20px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #316dc2;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #316dc2;
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 0.24px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 34px;
+    height: 34px;
+    background-color: #316dc2;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    mask-image: url("/__spritemap#sprite-arrow-up-view");
+  }
+
+  &:focus {
+    &::before {
+      background-color: #316dc2;
+    }
+
+    &::after {
+      background-color: #ffffff;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &:hover:not(:disabled) {
+    background-color: #316dc2;
+    color: #ffffff;
+
+    &::before {
+      background-color: #ffffff;
+    }
+
+    &::after {
+      background-color: #316dc2;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &:active:not(:disabled) {
+    background-color: #316dc2;
+    color: rgba(255, 255, 255, 0.7);
+
+    &::before {
+      background-color: #ffffff;
+    }
+
+    &::after {
+      background-color: rgba(49, 109, 194, 0.7);
+    }
+  }
+
+  &:disabled {
+    color: #a9afb7;
+    border-color: #a9afb7;
+    pointer-events: none;
+
+    &::before {
+      background-color: #a9afb7;
+    }
+
+    &::after {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 279px;
+    padding: 20px 50px 20px 30px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+
+    &::before {
+      width: 46px;
+      height: 46px;
+    }
+
+    &::after {
+      right: 23px;
+    }
+  }
+}
+
+.about__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+  margin: 0;
+  padding: 42px 20px;
+  list-style: none;
+  border-radius: 20px;
+  background-color: #316dc2;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 54px 52px;
+    padding: 72px 50px 50px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+    padding-right: 100px;
+    padding-left: 120px;
+  }
+}
+
+.about__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 20px;
+  row-gap: 15px;
+  border: 1px solid #f0efe9;
+  border-radius: 16px;
+
+  h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.16px;
+    color: #ffffff;
+  }
+
+  p {
+    margin: 0;
+    font-weight: 300;
+    color: #f0efe9;
+  }
+
+  &::before {
+    position: absolute;
+    top: -22px;
+    left: -21px;
+    content: "";
+    width: 42px;
+    height: 42px;
+    background-color: #316dc2;
+    background-image: url("/__spritemap#sprite-star-view");
+    background-repeat: no-repeat;
+    background-size: 18px 22px;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 253px;
+    row-gap: 14.5px;
+    padding: 16px 20px 15px;
+
+    h4 {
+      font-size: 20px;
+      line-height: 22px;
+      letter-spacing: 0.2px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    &::before {
+      top: -23px;
+      left: -21px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 484px;
+    flex-direction: row;
+    row-gap: 0;
+    padding: 30px 40px 30.5px;
+    align-items: center;
+    justify-content: space-between;
+
+    h4 {
+      font-size: 26px;
+      line-height: 30px;
+      letter-spacing: 0.26px;
+    }
+
+    p {
+      width: 201px;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.about__item:last-child {
+  h4 {
+    width: 115px;
+  }
+
+  @media (min-width: $desktop-width) {
+    h4 {
+      width: 134px;
+    }
+  }
+}
