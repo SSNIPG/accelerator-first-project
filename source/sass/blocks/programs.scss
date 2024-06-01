@@ -1,0 +1,231 @@
+.programs {
+  padding: 50px 0;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px 100px 82px;
+  }
+}
+
+.programs__wrapper {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1240px;
+  }
+}
+
+.programs__buttons {
+  position: absolute;
+  top: 4px;
+  right: 15px;
+
+  @media (min-width: $tablet-width) {
+    bottom: -62px;
+    top: auto;
+    right: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+  }
+}
+
+.programs__title {
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 6px 60px 4px 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #316dc2;
+
+  @media (min-width: $tablet-width) {
+    padding: 3px 250px 3px 45px;
+    margin-bottom: 40px;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 5px 250px 5px 0;
+    font-size: 50px;
+    line-height: 50px;
+  }
+}
+
+.programs .programs__swiper {
+  padding: 0 15px;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 45px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.programs__link {
+  position: relative;
+  display: block;
+  width: 205px;
+  margin-left: 15px;
+  padding: 16px 38px 14px 30px;
+  font-size: 12px;
+  line-height: 12px;
+  font-weight: 500;
+  color: #316dc2;
+  background-color: transparent;
+  border-radius: 30px;
+  border: 1px solid #316dc2;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  letter-spacing: 0.24px;
+  cursor: pointer;
+
+  &::before {
+    position: absolute;
+    right: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 34px;
+    height: 34px;
+    background-color: #316dc2;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    right: 17px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    mask-image: url("/__spritemap#sprite-arrow-up-view");
+  }
+
+  &:focus {
+    &::before {
+      background-color: #316dc2;
+    }
+
+    &::after {
+      background-color: #ffffff;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &:hover:not(:disabled) {
+    background-color: #316dc2;
+    color: #ffffff;
+
+    &::before {
+      background-color: #ffffff;
+    }
+
+    &::after {
+      background-color: #316dc2;
+      transform: translateY(-50%) rotate(45deg);
+    }
+  }
+
+  &:active:not(:disabled) {
+    background-color: #316dc2;
+    color: rgba(255, 255, 255, 0.7);
+
+    &::before {
+      background-color: #ffffff;
+    }
+
+    &::after {
+      background-color: rgba(49, 109, 194, 0.7);
+    }
+  }
+
+  &:disabled {
+    color: #a9afb7;
+    border-color: #a9afb7;
+    pointer-events: none;
+
+    &::before {
+      background-color: #a9afb7;
+    }
+
+    &::after {
+      background-color: rgba(255, 255, 255, 0.6);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    right: 45px;
+    top: 0;
+    width: 234px;
+    margin-left: 0;
+    padding: 20px 60px 20px 30px;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.28px;
+
+    &::before {
+      width: 46px;
+      height: 46px;
+    }
+
+    &::after {
+      right: 23px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+    top: 2px;
+  }
+}
+
+.programs__scrollbar {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 45px;
+    bottom: -52px;
+    display: block;
+    width: 562px;
+    height: 2px;
+    background-color: rgba(49, 109, 194, 0.2);
+    cursor: pointer;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1136px;
+    left: 0;
+  }
+}
+
+.programs .swiper-scrollbar-drag {
+  width: 326px;
+  height: 2px;
+  background-color: #316dc2;
+}

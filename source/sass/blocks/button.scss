@@ -1,0 +1,53 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #316dc2;
+    mask-image: url("/__spritemap#sprite-arrow-right-view");
+  }
+
+  &:hover:not(:disabled) {
+    &::before {
+      background-color: rgba(49, 109, 194, 0.7);
+    }
+  }
+
+  &:focus {
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.7);
+
+    &::before {
+      background-color: rgba(49, 109, 194, 0.7);
+    }
+  }
+
+  &:disabled {
+    background-color: transparent;
+    pointer-events: none;
+
+    &::before {
+      background-color: #a9afb7;
+    }
+  }
+}
+
+.button--prev {
+  &::before {
+    transform: rotate(180deg);
+  }
+}

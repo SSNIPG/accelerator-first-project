@@ -1,0 +1,191 @@
+.programs-card.swiper-slide {
+  display: flex;
+  align-items: flex-end;
+  width: 290px;
+  height: 400px;
+  padding: 18px 10px;
+  border-radius: 12px;
+
+  @media (min-width: $tablet-width) {
+    width: 324px;
+    height: 420px;
+    padding: 10px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 51px 17px 20px;
+  }
+}
+
+.programs-card {
+  background-repeat: no-repeat;
+}
+
+.programs-card--internships {
+  background-image: linear-gradient(to top, rgba(49, 109, 194, 0.2), rgba(49, 109, 194, 0.2) 100%),
+    url("/img/programs/mobile-photo-1.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, rgba(49, 109, 194, 0.2), rgba(49, 109, 194, 0.2) 100%),
+        url("/img/programs/tablet-photo-1.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, rgba(49, 109, 194, 0.2), rgba(49, 109, 194, 0.2) 100%),
+        url("/img/programs/desktop-photo-1.jpg");
+  }
+}
+
+.programs-card--volunteering {
+  background-image: linear-gradient(to top, rgba(49, 109, 194, 0.2), rgba(49, 109, 194, 0.2) 100%),
+      url("/img/programs/mobile-photo-2.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, rgba(49, 109, 194, 0.2), rgba(49, 109, 194, 0.2) 100%),
+      url("/img/programs/tablet-photo-2.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, rgba(49, 109, 194, 0.2), rgba(49, 109, 194, 0.2) 100%),
+      url("/img/programs/desktop-photo-2.jpg");
+  }
+}
+
+.programs-card--studies {
+  background-image: linear-gradient(to top, rgba(49, 109, 194, 0.2), rgba(49, 109, 194, 0.2) 100%),
+      url("/img/programs/mobile-photo-3.jpg");
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, rgba(49, 109, 194, 0.2), rgba(49, 109, 194, 0.2) 100%),
+      url("/img/programs/tablet-photo-3.jpg");
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: linear-gradient(to top, rgba(49, 109, 194, 0.2), rgba(49, 109, 194, 0.2) 100%),
+      url("/img/programs/desktop-photo-3.jpg");
+  }
+}
+
+.programs-card__title {
+  position: relative;
+  width: 146px;
+  margin: 0;
+  padding: 18px 18px 6px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  border-radius: 12px 12px 0 0;
+  color: #316dc2;
+  background-color: #ffffff;
+
+  &::after {
+    position: absolute;
+    right: -18px;
+    bottom: 0;
+    content: "";
+    width: 18px;
+    height: 18px;
+    background-image: url("/__spritemap#sprite-rounding-view");
+    transform: rotate(270deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 173px;
+    padding: 19px 18px 5px;
+    font-size: 20px;
+    line-height: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 194px;
+    padding: 18px 18px 6px;
+    font-size: 24px;
+    line-height: 17px;
+  }
+}
+
+.programs-card__wrapper {
+  position: relative;
+
+  p {
+    width: 270px;
+    margin: 0;
+    padding: 13px 64px 14px 18px;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 0 12px 12px 12px;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: $tablet-width) {
+    p {
+      width: 284px;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 12px 70px 15px 18px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    p {
+      display: flex;
+      align-items: center;
+      width: 321px;
+      min-height: 82px;
+      padding-top: 13px;
+      line-height: 18px;
+    }
+  }
+}
+
+.programs-card__link {
+  position: absolute;
+  right: 18px;
+  bottom: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #316dc2;
+  border-radius: 50%;
+
+  &::after {
+    display: block;
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+    mask-image: url("/__spritemap#sprite-arrow-up-view");
+  }
+
+  &:hover {
+    background-color: #ffffff;
+
+    &::after {
+      background-color: #316dc2;
+      transform: rotate(45deg);
+    }
+  }
+
+  &:focus {
+    &::after {
+      transform: rotate(45deg);
+    }
+  }
+
+  &:active {
+    &::after {
+      background-color: rgba(49, 109, 194, 0.7);
+      transform: rotate(45deg);
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 28px;
+  }
+}
