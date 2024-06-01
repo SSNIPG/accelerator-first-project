@@ -44,6 +44,7 @@ const getSlider = () => {
       modules: [Navigation, Pagination, Scrollbar],
       direction: 'horizontal',
       loop: false,
+      allowTouchMove: true,
       breakpoints: {
         320: {
           slidesPerView: 1,
