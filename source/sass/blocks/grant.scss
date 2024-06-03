@@ -56,21 +56,19 @@
   height: 200px;
   background-image: url("/img/grant/mobile-photo.jpg");
   background-repeat: no-repeat;
-  background-size: 290px 200px;
+  background-size: cover;
   border-radius: 16px;
 
   @media (min-width: $tablet-width) {
     width: 678px;
     height: 375px;
     background-image: url("/img/grant/tablet-photo.jpg");
-    background-size: 678px 375px;
   }
 
   @media (min-width: $desktop-width) {
     width: 498px;
     height: 363px;
     background-image: url("/img/grant/desktop-photo.jpg");
-    background-size: 498px 363px;
   }
 }
 
