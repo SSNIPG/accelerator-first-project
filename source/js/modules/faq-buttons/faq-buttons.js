@@ -5,11 +5,11 @@ const faqItem = faq.querySelectorAll('.faq__item');
 
 function onNoInteractiveElementKeydown () {
   for (let i = 0; i < faqItemInners.length; i++) {
-    faqItemInners[i].addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
+    faqItemInners[i].addEventListener('keydown', (evt) => {
+      if (evt.key === 'Enter' || evt.key === ' ') {
         faqItem[i].classList.toggle('faq__item--active');
         faqListButtons[i].classList.toggle('faq__list-button--active');
-
+        evt.preventDefault();
       }
     });
   }

@@ -7,10 +7,15 @@ const programs = document.querySelector('.programs');
 const programsSwiper = programs.querySelector('.programs__swiper');
 const programsBtnNext = programs.querySelector('.programs__button--next');
 const programsBtnPrev = programs.querySelector('.programs__button--prev');
+const reviews = document.querySelector('.reviews');
+const reviewsSwiper = reviews.querySelector('.reviews__swiper');
+const reviewsBtnNext = reviews.querySelector('.reviews__button--next');
+const reviewsBtnPrev = reviews.querySelector('.reviews__button--prev');
 
 const getSlider = () => {
   let promoSlider;
   let programsSlider;
+  let reviewsSlider;
 
   if (promoSwiper) {
     promoSlider = new Swiper(promoSwiper, {
@@ -51,13 +56,11 @@ const getSlider = () => {
           spaceBetween: 15,
         },
         768: {
-          // slidesPerView: 2,
           slidesPerView: 'auto',
           spaceBetween: 30,
         },
         1440: {
           slidesPerView: 3,
-          // slidesPerView: 'auto',
           spaceBetween: 32,
           allowTouchMove: false,
         },
@@ -72,7 +75,41 @@ const getSlider = () => {
       },
     });
   }
-  return { promoSlider, programsSlider };
+
+  if (reviewsSwiper) {
+    reviewsSlider = new Swiper(reviewsSwiper, {
+      modules: [Navigation, Pagination],
+      direction: 'horizontal',
+      loop: false,
+      autoplay: false,
+      allowTouchMove: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 15,
+        },
+        768: {
+          slidesPerView: 'auto',
+          spaceBetween: 30,
+        },
+        1440: {
+          slidesPerView: 2,
+          spaceBetween: 32,
+          allowTouchMove: false,
+        },
+      },
+      pagination: {
+        el: '.reviews__pagination',
+        clickable: 'true',
+      },
+      navigation: {
+        nextEl: reviewsBtnNext,
+        prevEl: reviewsBtnPrev,
+      },
+    });
+  }
+
+  return { promoSlider, programsSlider, reviewsSlider };
 };
 
 export { getSlider };

@@ -1,0 +1,34 @@
+.pagination-scrollbar {
+  display: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    left: 45px;
+    bottom: -52px;
+    display: flex;
+    width: 562px;
+    height: 2px;
+    background-color: rgba(49, 109, 194, 0.2);
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0;
+    width: 1136px;
+  }
+}
+
+.pagination-scrollbar__button,
+.swiper-pagination-bullet {
+  width: 326px;
+  height: 2px;
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.pagination-scrollbar__button--active,
+.swiper-pagination-bullet-active {
+  background-color: #316dc2;
+}

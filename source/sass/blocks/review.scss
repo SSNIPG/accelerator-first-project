@@ -1,0 +1,144 @@
+.review {
+  padding: 30px 15px;
+  border: 2px solid #316dc2;
+  border-radius: 16px;
+
+  p {
+    margin: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 48px 50px 50px;
+
+    p {
+      line-height: 26px;
+    }
+  }
+}
+
+.review__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.review__inner {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 15px;
+    margin-bottom: 0;
+  }
+}
+
+.review__img {
+  display: block;
+  border-radius: 50%;
+}
+
+.review__author {
+  display: inline-block;
+  line-height: 18px;
+  color: #316dc2;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 2px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    padding-top: 0;
+  }
+}
+
+.review__list__wrapper {
+  display: flex;
+  column-gap: 25px;
+  margin-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    padding-right: 1px;
+    column-gap: 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
+    column-gap: 25px;
+  }
+}
+
+.review__list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 11px;
+  }
+}
+
+.review__list-title {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  text-transform: uppercase;
+  color: #316dc2;
+}
+
+.review__list-description {
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 18px;
+  }
+}
+
+.review__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #316dc2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    line-height: 26px;
+    margin-bottom: 25px;
+  }
+}

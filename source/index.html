@@ -283,6 +283,89 @@
           </ul>
         </div>
       </section>
+      <section class="reviews" data-test="reviews">
+        <div class="reviews__wrapper">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="reviews__swiper swiper">
+            <ul class="reviews__list swiper-wrapper">
+              <li class="reviews__item review swiper-slide">
+                <div class="review__wrapper">
+                  <div class="review__inner">
+                    <div class="review__img-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img/reviews/tablet-photo-1@1x.webp 1x, img/reviews/tablet-photo-1@2x.webp 2x" width="90" height="90" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="img/reviews/tablet-photo-1@1x.jpg 1x, img/reviews/tablet-photo-1@2x.jpg 2x" width="90" height="90" type="image/jpg">
+                        <source srcset="img/reviews/mobile-photo-1@1x.webp 1x, img/reviews/mobile-photo-1@2x.webp 2x" type="image/webp">
+                        <img class="review__img" src="img/reviews/mobile-photo-1@1x.jpg" srcset="img/reviews/mobile-photo-1@2x.jpg 2x" width="60" height="60" alt="Автор отзыва Лола Алекс.">
+                      </picture>
+                    </div>
+                    <span class="review__author">Лола<br> Алекс</span>
+                  </div>
+                  <div class="review__list__wrapper">
+                    <dl class="review__list">
+                      <dt class="review__list-title">программа</dt>
+                      <dd class="review__list-description">Masa Art Challenge</dd>
+                    </dl>
+                    <dl class="review__list">
+                      <dt class="review__list-title">Дата</dt>
+                      <dd class="review__list-description">Осень 2022</dd>
+                    </dl>
+                  </div>
+                </div>
+                <h3 class="review__title">Я могу с уверенностью сказать, что это был один из самых незабываемых опытов в жизни!</h3>
+                <p>Я рекомендую программу «Стажировка» всем студентам, желающим получить незабываемые впечатления. Сочетание путешествий, общения и значимой работы действительно отличает её от других программ, и я чувствую огромную благодарность за предоставленную мне возможность.</p>
+              </li>
+              <li class="reviews__item review swiper-slide">
+                <div class="review__wrapper">
+                  <div class="review__inner">
+                    <div class="review__img-wrapper">
+                      <picture>
+                        <source media="(min-width: 768px)" srcset="img/reviews/tablet-photo-2@1x.webp 1x, img/reviews/tablet-photo-2@2x.webp 2x" width="90" height="90" type="image/webp">
+                        <source media="(min-width: 768px)" srcset="img/reviews/tablet-photo-2@1x.jpg 1x, img/reviews/tablet-photo-2@2x.jpg 2x" width="90" height="90" type="image/jpg">
+                        <source srcset="img/reviews/tablet-photo-2@1x.webp 1x, img/reviews/tablet-photo-2@2x.webp 2x" type="image/webp">
+                        <img class="review__img" src="img/reviews/tablet-photo-2@1x.jpg" srcset="img/reviews/tablet-photo-2@2x.jpg 2x" width="60" height="60" alt="Автор отзыва Лола Алекс.">
+                      </picture>
+                    </div>
+                    <span class="review__author">Давид<br> Иванов</span>
+                  </div>
+                  <div class="review__list__wrapper">
+                    <dl class="review__list">
+                      <dt class="review__list-title">программа</dt>
+                      <dd class="review__list-description">Volunteer Chance</dd>
+                    </dl>
+                    <dl class="review__list">
+                      <dt class="review__list-title">Дата</dt>
+                      <dd class="review__list-description">Лето 2022</dd>
+                    </dl>
+                  </div>
+                </div>
+                <h3 class="review__title">Благодаря опыту стажировки я узнал так много нового о себе и об окружающем мире.</h3>
+                <p>Каждый день был возможностью оказать ощутимое влияние на жизнь других людей. Я бы очень рекомендовал эту волонтёрскую программу всем, кто ищет значимый и незабываемый опыт. Организация была на высшем уровне. Для меня было честью быть частью такой удивительной инициативы.</p>
+              </li>
+            </ul>
+          </div>
+          <ul class="reviews__pagination pagination-scrollbar">
+            <li class="pagination-scrollbar__item">
+              <button class="pagination-scrollbar__button" type="button">
+                <span class="visually-hidden">Показать первый слайд.</span>
+              </button>
+            </li>
+            <li class="pagination-scrollbar__item">
+              <button class="pagination-scrollbar__button" type="button">
+                <span class="visually-hidden">Показать второй слайд.</span>
+              </button>
+            </li>
+          </ul>
+          <div class="reviews__buttons buttons">
+            <button class="reviews__button reviews__button--prev button button--prev" type="button">
+              <span class="visually-hidden">Показать предыдущий слайд.</span>
+            </button>
+            <button class="reviews__button reviews__button--next button button--next" type="button">
+              <span class="visually-hidden">Показать следующий слайд.</span>
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
     <!-- пример использования спрайта -->
     <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
