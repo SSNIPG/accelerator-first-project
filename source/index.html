@@ -366,6 +366,42 @@
           </div>
         </div>
       </section>
+      <section class="contacts" data-test="contacts">
+        <div class="contacts__wrapper wrapper">
+          <div class="contacts__container">
+            <h2 class="contacts__title">Контакты</h2>
+            <div class="contacts__info">
+              <dl class="contacts__list">
+                <dt class="contacts__list-title">центральный офис</dt>
+                <dd class="contacts__description">г. Новосибирск, ул. Щетинкина 68,<br> культурный центр</dd>
+              </dl>
+              <dl class="contacts__list">
+                <dt class="contacts__list-title">Телефон</dt>
+                <dd class="contacts__description contacts__description--phone">
+                  <a class="contacts__link" href="tel:+796387687676">+7 963 876 876 76</a>
+                </dd>
+              </dl>
+              <dl class="contacts__list">
+                <dt class="contacts__list-title">Email</dt>
+                <dd class="contacts__description contacts__description--mail">
+                  <a class="contacts__link" href="mailto:Info@stazh.ru">Info@stazh.ru</a>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="contacts__map">
+            <picture>
+              <source media="(min-width: 1440px)" srcset="img/contacts/desktop-map@1x.webp 1x, img/contacts/desktop-map@2x.webp 2x" width="1240" height="486" type="image/webp">
+              <source media="(min-width: 1440px)" srcset="img/contacts/desktop-map@1x.jpg 1x, img/contacts/desktop-map@2x.jpg 2x" width="678" height="500" type="image/png">
+              <source media="(min-width: 768px)" srcset="img/contacts/tablet-map@1x.webp 1x, img/contacts/tablet-map@2x.webp 2x" width="678" height="500" type="image/webp">
+              <source media="(min-width: 768px)" srcset="img/contacts/tablet-map@1x.jpg 1x, img/contacts/tablet-map@2x.jpg 2x" width="678" height="500" type="image/png">
+              <source srcset="img/contacts/mobile-map@1x.webp 1x, img/contacts/mobile-map@2x.webp 2x" type="image/webp">
+              <img class="contacts__img" src="img/contacts/mobile-map@1x.png" srcset="img/contacts/mobile-map@2x.png" width="290" height="240" alt="Наше расположение на карте.">
+            </picture>
+          </div>
+        </div>
+
+      </section>
     </main>
     <!-- пример использования спрайта -->
     <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">

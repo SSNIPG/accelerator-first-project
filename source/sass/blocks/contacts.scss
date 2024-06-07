@@ -1,0 +1,151 @@
+.contacts {
+  padding: 70px 15px;
+  color: #ffffff;
+  background-color: #316dc2;
+
+  @media (min-width: $tablet-width) {
+    padding: 100px 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 120px 100px;
+  }
+}
+
+.contacts__wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 62px;
+
+  @media (min-width: $desktop-width) {
+    row-gap: 82px;
+  }
+}
+
+.contacts__container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+
+  &::after {
+    position: absolute;
+    bottom: -32px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+
+  @media (min-width: $tablet-width) {
+    row-gap: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    row-gap: 0;
+    justify-content: space-between;
+
+    &::after {
+      bottom: -42px;
+    }
+  }
+}
+
+.contacts__title {
+  margin: 0;
+  padding: 6px 0;
+  font-size: 20px;
+  font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 34px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+  }
+}
+
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 21px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    row-gap: 0;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 604px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    row-gap: 23px;
+  }
+
+  @media (min-width: $desktop-width) {
+    row-gap: 24px;
+  }
+}
+
+.contacts__list-title {
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  color: rgba(240, 239, 233, 0.8);
+  text-transform: uppercase;
+}
+
+.contacts .contacts__description {
+  margin: 0;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    line-height: 26px;
+
+    br {
+      display: block;
+    }
+
+    &--phone,
+    &--mail {
+      line-height: 17px;
+    }
+  }
+}
+
+.contacts__link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+
+  @media (min-width: $desktop-width) {
+    font-size: 16px;
+    line-height: 17px;
+  }
+}
+
+.contacts__img {
+  display: block;
+  border-radius: 16px;
+}
