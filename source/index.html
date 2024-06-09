@@ -400,7 +400,48 @@
             </picture>
           </div>
         </div>
-
+      </section>
+      <section class="page-form" data-test="form">
+        <h2 class="visually-hidden">Форма обратной связи.</h2>
+        <div class="page-form__wrapper">
+          <div class="page-form__container">
+            <h3 class="page-form__title">Напишите нам</h3>
+            <p class="page-form__description">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <form class="form" method="post" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
+              <label class="form__label">
+                <input class="form__input" type="text" name="name" required>
+                <span class="form__label-value">Имя</span>
+              </label>
+              <label class="form__label">
+                <input class="form__input" type="tel" name="tel" required>
+                <span class="form__label-value">Телефон</span>
+              </label>
+              <label class="form__label">
+                <textarea class="form__message" name="text" required></textarea>
+                <span class="form__label-value">Ваше сообщение</span>
+              </label>
+              <div class="form__dropdown-wrapper">
+                <button class="form__dropdown-button" type="button">
+                  <span class="visually-hidden">Выбрать город.</span>
+                </button>
+                <span class="form__label-value form__label-value--city">Выберите город</span>
+                <ul class="form__list">
+                  <li class="form__list-item" tabindex="0" data-value="moscow">Москва</li>
+                  <li class="form__list-item" tabindex="0" data-value="saint-petersburg">Санкт-Петербург</li>
+                  <li class="form__list-item" tabindex="0" data-value="kazan">Казань</li>
+                  <li class="form__list-item" tabindex="0" data-value="grozny">Грозный</li>
+                </ul>
+                <input class="form__input-hidden" type="text" name="select-category" value="">
+              </div>
+              <label class="form__label form__label--agree">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" name="agree" tabindex="-1" required>
+                <span class="form__mark" tabindex="0"></span>
+                <p class="form__agree">Я согласен на обработку моих персональных<br> данных</p>
+              </label>
+              <button class="form__button" type="submit">отправить</button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
     <!-- пример использования спрайта -->
