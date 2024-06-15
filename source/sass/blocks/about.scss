@@ -171,8 +171,6 @@
     &::before {
       background-color: #316dc2;
     }
-
-
   }
 
   &:hover:not(:disabled) {
@@ -321,7 +319,7 @@
     width: 484px;
     flex-direction: row;
     row-gap: 0;
-    padding: 30px 40px 30px;
+    padding: 30px 40px;
     align-items: center;
     justify-content: space-between;
 

@@ -10,8 +10,8 @@
   border-radius: 12px 12px 0 0;
 }
 
-.pagination__button,
-.swiper-pagination-bullet {
+.pagination .pagination__button,
+.pagination .swiper-pagination-bullet {
   display: block;
   width: 8px;
   height: 8px;
@@ -20,7 +20,7 @@
   border-radius: 50%;
   cursor: pointer;
 
-  &:hover:not(&--current) {
+  &:hover:not(.pagination__button--current) {
     border-color: #ffffff;
     background-color: #316dc2;
   }

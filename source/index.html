@@ -71,6 +71,23 @@
           </div>
         </div>
         <div class="promo__swiper swiper">
+          <ul class="promo__pagination pagination">
+            <li class="pagination__item">
+              <button class="pagination__button pagination__button--current" type="button">
+                <span class="visually-hidden">Показать первый слайд.</span>
+              </button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">
+                <span class="visually-hidden">Показать второй слайд.</span>
+              </button>
+            </li>
+            <li class="pagination__item">
+              <button class="pagination__button" type="button">
+                <span class="visually-hidden">Показать третий слайд.</span>
+              </button>
+            </li>
+          </ul>
           <ul class="promo__list swiper-wrapper">
             <li class="promo__item promo__item--first swiper-slide">
               <div class="promo__content">
@@ -106,23 +123,7 @@
               </div>
             </li>
           </ul>
-          <!-- <ul class="promo__pagination pagination">
-            <li class="pagination__item">
-              <button class="pagination__button pagination__button--current" type="button">
-                <span class="visually-hidden">Показать первый слайд.</span>
-              </button>
-            </li>
-            <li class="pagination__item">
-              <button class="pagination__button" type="button">
-                <span class="visually-hidden">Показать второй слайд.</span>
-              </button>
-            </li>
-            <li class="pagination__item">
-              <button class="pagination__button" type="button">
-                <span class="visually-hidden">Показать третий слайд.</span>
-              </button>
-            </li>
-          </ul> -->
+
         </div>
       </section>
       <section class="about" data-test="about" id="about">
@@ -135,7 +136,7 @@
             <div class="about__aim">
               <h3>Наша цель</h3>
               <p>Наша деятельность направлена на повышение квалификации молодых специалистов на ранних и средних стадиях карьеры, предоставляя им инструменты для решения сложных проблем, с которыми сталкиваются в мире. Цель центра — наделить этих людей способностью инициировать значимые изменения.</p>
-              <button class="about__button">подробнее о проекте</button>
+              <button class="about__button" type="button">подробнее о проекте</button>
             </div>
           </div>
           <ul class="about__list">
@@ -231,6 +232,112 @@
           </div>
         </div>
       </section>
+      <section class="news" data-test="news" id="news">
+        <div class="news__wrapper">
+          <h2 class="news__title">Новости и материалы</h2>
+          <ul class="news__tabs-list tabs-list">
+              <li class="tabs-list__item tab">
+                <button class="tab__button tab__button--current" type="button">общее</button>
+              </li>
+              <li class="tabs-list__item tab">
+                <button class="tab__button" type="button">Волонтёрство</button>
+              </li>
+              <li class="tabs-list__item tab">
+                <button class="tab__button" type="button">Стажировки</button>
+              </li>
+              <li class="tabs-list__item tab">
+                <button class="tab__button" type="button">Карьера</button>
+              </li>
+              <li class="tabs-list__item tab">
+                <button class="tab__button" type="button">путешествия</button>
+              </li>
+            </ul>
+            <div class="news__swiper swiper">
+              <ul class="news__list swiper-wrapper">
+                <li class="news__list-item news__list-item--first news__list-item--internship swiper-slide">
+                  <div class="news__list-item-wrapper">
+                    <time class="news__list-item-date" datetime="2023-03-23">23/03/2023</time>
+                    <h3 class="news__list-item-title">Интервью с участницей программы стажировки</h3>
+                    <div class="news__list-item-inner">
+                      <p>Саша рассказывает, как попала в программу и как прошла 6- месячная стажировка в ISOFound</p>
+                      <a class="news__list-item-link" href="#">
+                        <span class="visually-hidden">Посмотреть полное описание.</span>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__list-item news__list-item--career swiper-slide">
+                  <div class="news__list-item-wrapper">
+                    <time class="news__list-item-date" datetime="2023-03-10">10/03/2023</time>
+                    <h3 class="news__list-item-title">Построй свою карьеру</h3>
+                    <div class="news__list-item-inner">
+                      <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                      <a class="news__list-item-link" href="#">
+                        <span class="visually-hidden">Посмотреть полное описание.</span>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__list-item news__list-item--travel swiper-slide">
+                  <div class="news__list-item-wrapper">
+                    <time class="news__list-item-date" datetime="2023-03-20">20/03/2023</time>
+                    <h3 class="news__list-item-title">Путешествуем по миру</h3>
+                    <div class="news__list-item-inner">
+                      <p>Какие места посещают наши студенты весной</p>
+                      <a class="news__list-item-link" href="#">
+                        <span class="visually-hidden">Посмотреть полное описание.</span>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <li class="news__list-item news__list-item--volunteering swiper-slide">
+                  <div class="news__list-item-wrapper">
+                    <time class="news__list-item-date" datetime="2023-03-17">17/03/2023</time>
+                    <h3 class="news__list-item-title">Новая программа волонтёрства</h3>
+                    <div class="news__list-item-inner">
+                      <p>Программа помощи детям длительностью 4 месяца</p>
+                      <a class="news__list-item-link" href="#">
+                        <span class="visually-hidden">Посмотреть полное описание.</span>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+            <div class="news__buttons buttons">
+            <button class="news__button news__button--prev button button--prev" type="button">
+              <span class="visually-hidden">Показать предыдущий слайд.</span>
+            </button>
+            <button class="news__button news__button--next button button--next" type="button">
+              <span class="visually-hidden">Показать следующий слайд.</span>
+            </button>
+          </div>
+          <ul class="news__pagination">
+            <li class="news__pagination-item">
+              <button class="news__pagination-button news__pagination-button--current" type="button">
+                1
+              </button>
+            </li>
+            <li class="news__pagination-item">
+              <button class="news__pagination-button" type="button">
+                2
+              </button>
+            </li>
+            <li class="news__pagination-item">
+              <button class="news__pagination-button" type="button">
+                3
+              </button>
+            </li>
+            <li class="news__pagination-item">
+              <button class="news__pagination-button" type="button">
+                4
+              </button>
+            </li>
+          </ul>
+        </div>
+
+      </section>
       <section class="faq" data-test="FAQ">
         <div class="faq__wrapper wrapper">
           <h2 class="faq__title">Вопросы и ответы</h2>
@@ -295,13 +402,13 @@
                       <picture>
                         <source media="(min-width: 768px)" srcset="img/reviews/tablet-photo-1@1x.webp 1x, img/reviews/tablet-photo-1@2x.webp 2x" width="90" height="90" type="image/webp">
                         <source media="(min-width: 768px)" srcset="img/reviews/tablet-photo-1@1x.jpg 1x, img/reviews/tablet-photo-1@2x.jpg 2x" width="90" height="90" type="image/jpg">
-                        <source srcset="img/reviews/mobile-photo-1@1x.webp 1x, img/reviews/mobile-photo-1@2x.webp 2x" type="image/webp">
+                        <source srcset="img/reviews/mobile-photo-1@1x.webp 1x, img/reviews/mobile-photo-1@2x.webp 2x" width="60" height="60" type="image/webp">
                         <img class="review__img" src="img/reviews/mobile-photo-1@1x.jpg" srcset="img/reviews/mobile-photo-1@2x.jpg 2x" width="60" height="60" alt="Автор отзыва Лола Алекс.">
                       </picture>
                     </div>
                     <span class="review__author">Лола<br> Алекс</span>
                   </div>
-                  <div class="review__list__wrapper">
+                  <div class="review__list-wrapper">
                     <dl class="review__list">
                       <dt class="review__list-title">программа</dt>
                       <dd class="review__list-description">Masa Art Challenge</dd>
@@ -322,13 +429,13 @@
                       <picture>
                         <source media="(min-width: 768px)" srcset="img/reviews/tablet-photo-2@1x.webp 1x, img/reviews/tablet-photo-2@2x.webp 2x" width="90" height="90" type="image/webp">
                         <source media="(min-width: 768px)" srcset="img/reviews/tablet-photo-2@1x.jpg 1x, img/reviews/tablet-photo-2@2x.jpg 2x" width="90" height="90" type="image/jpg">
-                        <source srcset="img/reviews/tablet-photo-2@1x.webp 1x, img/reviews/tablet-photo-2@2x.webp 2x" type="image/webp">
+                        <source srcset="img/reviews/tablet-photo-2@1x.webp 1x, img/reviews/tablet-photo-2@2x.webp 2x" width="60" height="60" type="image/webp">
                         <img class="review__img" src="img/reviews/tablet-photo-2@1x.jpg" srcset="img/reviews/tablet-photo-2@2x.jpg 2x" width="60" height="60" alt="Автор отзыва Лола Алекс.">
                       </picture>
                     </div>
                     <span class="review__author">Давид<br> Иванов</span>
                   </div>
-                  <div class="review__list__wrapper">
+                  <div class="review__list-wrapper">
                     <dl class="review__list">
                       <dt class="review__list-title">программа</dt>
                       <dd class="review__list-description">Volunteer Chance</dd>
@@ -395,7 +502,7 @@
               <source media="(min-width: 1440px)" srcset="img/contacts/desktop-map@1x.jpg 1x, img/contacts/desktop-map@2x.jpg 2x" width="678" height="500" type="image/png">
               <source media="(min-width: 768px)" srcset="img/contacts/tablet-map@1x.webp 1x, img/contacts/tablet-map@2x.webp 2x" width="678" height="500" type="image/webp">
               <source media="(min-width: 768px)" srcset="img/contacts/tablet-map@1x.jpg 1x, img/contacts/tablet-map@2x.jpg 2x" width="678" height="500" type="image/png">
-              <source srcset="img/contacts/mobile-map@1x.webp 1x, img/contacts/mobile-map@2x.webp 2x" type="image/webp">
+              <source srcset="img/contacts/mobile-map@1x.webp 1x, img/contacts/mobile-map@2x.webp 2x" width="290" height="240" type="image/webp">
               <img class="contacts__img" src="img/contacts/mobile-map@1x.png" srcset="img/contacts/mobile-map@2x.png" width="290" height="240" alt="Наше расположение на карте.">
             </picture>
           </div>
@@ -416,10 +523,10 @@
                 <input class="form__input" type="tel" name="tel" required>
                 <span class="form__label-value">Телефон</span>
               </label>
-              <label class="form__label">
-                <textarea class="form__message" name="text" required></textarea>
+              <label class="form__label" for="message">
                 <span class="form__label-value">Ваше сообщение</span>
               </label>
+              <textarea class="form__message" id="message" name="text" required></textarea>
               <div class="form__dropdown-wrapper">
                 <button class="form__dropdown-button" type="button">
                   <span class="visually-hidden">Выбрать город.</span>
@@ -431,12 +538,15 @@
                   <li class="form__list-item" tabindex="0" data-value="kazan">Казань</li>
                   <li class="form__list-item" tabindex="0" data-value="grozny">Грозный</li>
                 </ul>
-                <input class="form__input-hidden" type="text" name="select-category" value="">
+                <label>
+                  <input class="form__input-hidden" type="text" name="select-category" value="null">
+                  <span class="visually-hidden">Выбор города.</span>
+                </label>
               </div>
               <label class="form__label form__label--agree">
                 <input class="form__input-checkbox visually-hidden" type="checkbox" name="agree" tabindex="-1" required>
                 <span class="form__mark" tabindex="0"></span>
-                <p class="form__agree">Я согласен на обработку моих персональных<br> данных</p>
+                <span class="form__agree">Я согласен на обработку моих персональных<br> данных</span>
               </label>
               <button class="form__button" type="submit">отправить</button>
             </form>
@@ -477,17 +587,17 @@
         </div>
         <ul class="footer__social-list social-list">
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="#" target="_blank">
+            <a class="social-list__link social-list__link--vk" href="#" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Мы в Вконтакте.</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--ok" href="#" target="_blank">
+            <a class="social-list__link social-list__link--ok" href="#" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Мы в Одноклассниках.</span>
             </a>
           </li>
           <li class="social-list__item">
-            <a class="social-list__link social-list__link--reddit" href="#" target="_blank">
+            <a class="social-list__link social-list__link--reddit" href="#" target="_blank" rel="noreferrer noopener">
               <span class="visually-hidden">Мы в Reddit.</span>
             </a>
           </li>
