@@ -1,7 +1,6 @@
 import Swiper from 'swiper';
 import { Pagination, Navigation, Scrollbar, Grid } from 'swiper/modules';
 import 'swiper/css';
-// import 'swiper/css/grid';
 const promo = document.querySelector('.promo');
 const promoSwiper = promo.querySelector('.promo__swiper');
 const programs = document.querySelector('.programs');
@@ -41,13 +40,12 @@ const getSlider = () => {
       },
     });
   }
-  promoSlider.on('init slideChange', () => {
+  promoSlider.on('slideChange', () => {
     const activeSlide = document.querySelector('.swiper-slide-active');
     const pagination = document.querySelector('.promo__pagination');
     const contentHeight = activeSlide.querySelector('.promo__content').offsetHeight;
 
-    pagination.style.top = `${ contentHeight - 28 }px`;
-    // pagination.style.left = `${50}%`;
+    pagination.style.bottom = `${ contentHeight + 60 }px`;
   });
 
   if (programsSwiper) {
@@ -152,10 +150,6 @@ const getSlider = () => {
           },
         },
       },
-      // pagination: {
-      //   el: '.news__pagination',
-      //   clickable: 'true',
-      // },
       navigation: {
         nextEl: newsBtnNext,
         prevEl: newsBtnPrev,

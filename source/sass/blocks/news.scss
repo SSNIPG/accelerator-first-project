@@ -122,10 +122,6 @@
       background-image: url("/img/news/tablet-photo-1.jpg");
     }
 
-    &--travel {
-      background-image: url("/img/news/tablet-photo-2.jpg");
-    }
-
     &--career {
       order: 2;
     }
@@ -137,10 +133,6 @@
 
     &--internship {
       background-image: url("/img/news/desktop-photo-1.jpg");
-    }
-
-    &--travel {
-      background-image: url("/img/news/desktop-photo-2.jpg");
     }
 
     &--volunteering {
@@ -189,6 +181,8 @@
 
   @media (min-width: $tablet-width) {
     min-height: 350px;
+    background-image: url("/img/news/tablet-photo-2.jpg");
+
 
     .news__list-item-inner {
       padding-top: 13px;
@@ -198,6 +192,7 @@
 
   @media (min-width: $desktop-width) {
     min-height: 400px;
+    background-image: url("/img/news/desktop-photo-2.jpg");
 
     .news__list-item-inner {
       padding-top: 12px;
@@ -426,6 +421,28 @@
     color: #ffffff;
     background-color: #316dc2;
     border-radius: 50%;
+    pointer-events: none;
+    outline: none;
+  }
+
+  &:hover:not(:active) {
+    color: #316dc2;
+    border: 2px solid #316dc2;
+    border-radius: 50%;
+  }
+
+  &:focus-visible:not(:active):not(.news__pagination-button--current) {
+    background-color: #ffffff;
+    border: 2px solid #316dc2;
+    border-radius: 50%;
+    outline: none;
+  }
+
+  &:active {
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #275699;
+    outline: none;
   }
 
   @media (min-width: $tablet-width) {

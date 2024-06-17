@@ -53,7 +53,7 @@
     width: 16px;
     height: 8px;
     background-color: #ffffff;
-    mask-image: url("/__spritemap#sprite-menu-view");
+    mask-image: url("../__spritemap#sprite-menu-view");
   }
 
   &::before {
@@ -66,6 +66,21 @@
     height: 46px;
     border-radius: 50%;
     background-color: #316dc2;
+  }
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+    background-color: #316dc2;
+    outline: none;
+
+    &::before {
+      background-color: #ffffff;
+    }
+
+    &::after {
+      background-color: #316dc2;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -194,6 +209,29 @@
   }
 }
 
+.promo__content-inner p {
+  position: relative;
+  width: 267px;
+  margin: 0;
+  padding: 0 30px 15px 14px;
+  background-color: #ffffff;
+  border-radius: 0 0 14px;
+
+  &::after {
+    position: absolute;
+    right: 74px;
+    bottom: -10px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-image: url("/__spritemap#sprite-rounding-view");
+  }
+
+  br {
+    display: none;
+  }
+}
+
 .promo__content-inner {
   @media (min-width: $tablet-width) {
     display: flex;
@@ -235,29 +273,6 @@
   }
 }
 
-.promo__content-inner p {
-  position: relative;
-  width: 267px;
-  margin: 0;
-  padding: 0 30px 15px 14px;
-  background-color: #ffffff;
-  border-radius: 0 0 14px;
-
-  &::after {
-    position: absolute;
-    right: 74px;
-    bottom: -10px;
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-image: url("/__spritemap#sprite-rounding-view");
-  }
-
-  br {
-    display: none;
-  }
-}
-
 .promo__content-inner--practice {
   @media (min-width: $tablet-width) {
     p {
@@ -268,7 +283,9 @@
 
 .promo__pagination {
   position: absolute;
-  top: 0;
+  bottom: 331px;
+  left: calc(50% - 99px);
+  transform: translateX(-50%);
   z-index: 2;
 
   &::after {
@@ -280,6 +297,11 @@
     height: 10px;
     transform: rotate(270deg);
     background-image: url("/__spritemap#sprite-rounding-view");
+  }
+
+  @media (min-width: $tablet-width) {
+    bottom: 352px;
+    left: calc(50% - 299px);
   }
 }
 

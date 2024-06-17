@@ -139,6 +139,34 @@
   text-decoration: none;
   color: inherit;
 
+  &:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:focus {
+    position: relative;
+    color: #484848;
+    outline: none;
+
+    &::after {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #484848;
+    }
+  }
+
+  &:active {
+    color: #ffffff;
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 16px;
     line-height: 17px;

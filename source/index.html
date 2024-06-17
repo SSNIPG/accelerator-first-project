@@ -4,7 +4,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Internship - открывает перед вами большие возможности.">
     <title>Internship</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="img/png" sizes="32x32" href="img/favicon.png">
+    <link rel="preload" href="fonts/Manrope-Light.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Manrope-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
@@ -15,7 +21,7 @@
         <div class="promo__header">
           <div class="promo__header-wrapper">
             <div class="promo__logo logo">
-              <img class="logo__img" src="img/sprite/logo.svg" width="30" height="30" alt="">
+              <img class="logo__img" src="img/sprite/logo.svg" width="30" height="30" alt="Логотип компании.">
             </div>
             <button class="promo__menu-button" type="button">меню</button>
             <nav class="nav">
@@ -123,7 +129,6 @@
               </div>
             </li>
           </ul>
-
         </div>
       </section>
       <section class="about" data-test="about" id="about">
@@ -236,76 +241,75 @@
         <div class="news__wrapper">
           <h2 class="news__title">Новости и материалы</h2>
           <ul class="news__tabs-list tabs-list">
-              <li class="tabs-list__item tab">
-                <button class="tab__button tab__button--current" type="button">общее</button>
+            <li class="tabs-list__item tab">
+              <button class="tab__button tab__button--current" type="button">общее</button>
+            </li>
+            <li class="tabs-list__item tab">
+              <button class="tab__button" type="button">Волонтёрство</button>
+            </li>
+            <li class="tabs-list__item tab">
+              <button class="tab__button" type="button">Стажировки</button>
+            </li>
+            <li class="tabs-list__item tab">
+              <button class="tab__button" type="button">Карьера</button>
+            </li>
+            <li class="tabs-list__item tab">
+              <button class="tab__button" type="button">путешествия</button>
+            </li>
+          </ul>
+          <div class="news__swiper swiper">
+            <ul class="news__list swiper-wrapper">
+              <li class="news__list-item news__list-item--first news__list-item--internship swiper-slide">
+                <div class="news__list-item-wrapper">
+                  <time class="news__list-item-date" datetime="2023-03-23">23/03/2023</time>
+                  <h3 class="news__list-item-title">Интервью с участницей программы стажировки</h3>
+                  <div class="news__list-item-inner">
+                    <p>Саша рассказывает, как попала в программу и как прошла 6- месячная стажировка в ISOFound</p>
+                    <a class="news__list-item-link" href="#">
+                      <span class="visually-hidden">Посмотреть полное описание.</span>
+                    </a>
+                  </div>
+                </div>
               </li>
-              <li class="tabs-list__item tab">
-                <button class="tab__button" type="button">Волонтёрство</button>
+              <li class="news__list-item news__list-item--career swiper-slide">
+                <div class="news__list-item-wrapper">
+                  <time class="news__list-item-date" datetime="2023-03-10">10/03/2023</time>
+                  <h3 class="news__list-item-title">Построй свою карьеру</h3>
+                  <div class="news__list-item-inner">
+                    <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
+                    <a class="news__list-item-link" href="#">
+                      <span class="visually-hidden">Посмотреть полное описание.</span>
+                    </a>
+                  </div>
+                </div>
               </li>
-              <li class="tabs-list__item tab">
-                <button class="tab__button" type="button">Стажировки</button>
+              <li class="news__list-item news__list-item--travel swiper-slide">
+                <div class="news__list-item-wrapper">
+                  <time class="news__list-item-date" datetime="2023-03-20">20/03/2023</time>
+                  <h3 class="news__list-item-title">Путешествуем по миру</h3>
+                  <div class="news__list-item-inner">
+                    <p>Какие места посещают наши студенты весной</p>
+                    <a class="news__list-item-link" href="#">
+                      <span class="visually-hidden">Посмотреть полное описание.</span>
+                    </a>
+                  </div>
+                </div>
               </li>
-              <li class="tabs-list__item tab">
-                <button class="tab__button" type="button">Карьера</button>
-              </li>
-              <li class="tabs-list__item tab">
-                <button class="tab__button" type="button">путешествия</button>
+              <li class="news__list-item news__list-item--volunteering swiper-slide">
+                <div class="news__list-item-wrapper">
+                  <time class="news__list-item-date" datetime="2023-03-17">17/03/2023</time>
+                  <h3 class="news__list-item-title">Новая программа волонтёрства</h3>
+                  <div class="news__list-item-inner">
+                    <p>Программа помощи детям длительностью 4 месяца</p>
+                    <a class="news__list-item-link" href="#">
+                      <span class="visually-hidden">Посмотреть полное описание.</span>
+                    </a>
+                  </div>
+                </div>
               </li>
             </ul>
-            <div class="news__swiper swiper">
-              <ul class="news__list swiper-wrapper">
-                <li class="news__list-item news__list-item--first news__list-item--internship swiper-slide">
-                  <div class="news__list-item-wrapper">
-                    <time class="news__list-item-date" datetime="2023-03-23">23/03/2023</time>
-                    <h3 class="news__list-item-title">Интервью с участницей программы стажировки</h3>
-                    <div class="news__list-item-inner">
-                      <p>Саша рассказывает, как попала в программу и как прошла 6- месячная стажировка в ISOFound</p>
-                      <a class="news__list-item-link" href="#">
-                        <span class="visually-hidden">Посмотреть полное описание.</span>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-                <li class="news__list-item news__list-item--career swiper-slide">
-                  <div class="news__list-item-wrapper">
-                    <time class="news__list-item-date" datetime="2023-03-10">10/03/2023</time>
-                    <h3 class="news__list-item-title">Построй свою карьеру</h3>
-                    <div class="news__list-item-inner">
-                      <p>Ведущие компании готовы трудоустроить выпускников стажировки</p>
-                      <a class="news__list-item-link" href="#">
-                        <span class="visually-hidden">Посмотреть полное описание.</span>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-                <li class="news__list-item news__list-item--travel swiper-slide">
-                  <div class="news__list-item-wrapper">
-                    <time class="news__list-item-date" datetime="2023-03-20">20/03/2023</time>
-                    <h3 class="news__list-item-title">Путешествуем по миру</h3>
-                    <div class="news__list-item-inner">
-                      <p>Какие места посещают наши студенты весной</p>
-                      <a class="news__list-item-link" href="#">
-                        <span class="visually-hidden">Посмотреть полное описание.</span>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-                <li class="news__list-item news__list-item--volunteering swiper-slide">
-                  <div class="news__list-item-wrapper">
-                    <time class="news__list-item-date" datetime="2023-03-17">17/03/2023</time>
-                    <h3 class="news__list-item-title">Новая программа волонтёрства</h3>
-                    <div class="news__list-item-inner">
-                      <p>Программа помощи детям длительностью 4 месяца</p>
-                      <a class="news__list-item-link" href="#">
-                        <span class="visually-hidden">Посмотреть полное описание.</span>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-            <div class="news__buttons buttons">
+          </div>
+          <div class="news__buttons buttons">
             <button class="news__button news__button--prev button button--prev" type="button">
               <span class="visually-hidden">Показать предыдущий слайд.</span>
             </button>
@@ -315,28 +319,19 @@
           </div>
           <ul class="news__pagination">
             <li class="news__pagination-item">
-              <button class="news__pagination-button news__pagination-button--current" type="button">
-                1
-              </button>
+              <button class="news__pagination-button news__pagination-button--current" type="button">1</button>
             </li>
             <li class="news__pagination-item">
-              <button class="news__pagination-button" type="button">
-                2
-              </button>
+              <button class="news__pagination-button" type="button">2</button>
             </li>
             <li class="news__pagination-item">
-              <button class="news__pagination-button" type="button">
-                3
-              </button>
+              <button class="news__pagination-button" type="button">3</button>
             </li>
             <li class="news__pagination-item">
-              <button class="news__pagination-button" type="button">
-                4
-              </button>
+              <button class="news__pagination-button" type="button">4</button>
             </li>
           </ul>
         </div>
-
       </section>
       <section class="faq" data-test="FAQ">
         <div class="faq__wrapper wrapper">
@@ -557,7 +552,7 @@
     <footer class="footer" data-test="footer">
       <div class="footer__wrapper wrapper">
         <div class="footer__logo logo">
-          <img class="logo__img" src="img/sprite/logo.svg" width="30" height="30" alt="">
+          <img class="logo__img" src="img/sprite/logo.svg" width="30" height="30" alt="Логотип компании.">
         </div>
         <ul class="footer__nav">
           <li class="footer__nav-item">
@@ -604,23 +599,52 @@
         </ul>
       </div>
     </footer>
-    <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
-      <use href="/__spritemap#sprite-user"></use>
-    </svg> -->
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <!-- <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="programs">programs</div>
-    <div data-test="grant">grant</div>
-    <div data-test="news">news</div>
-    <div data-test="FAQ">FAQ</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="contacts">contacts</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div> -->
+    <div class="page-modal page-modal--position page-modal--closed">
+      <section class="page-form page-form--modal">
+        <h2 class="visually-hidden">Форма обратной связи.</h2>
+        <div class="page-form__wrapper page-form__wrapper--light">
+          <div class="page-form__container page-form__container--modal">
+            <h3 class="page-form__title page-form__title--modal">Напишите нам</h3>
+            <p class="page-form__description page-form__description--modal">Оставьте ваши контакты, если у вас остались вопросы — мы на них ответим!</p>
+            <button class="page-modal__button" type="button">
+              <span class="visually-hidden">Закрыть модальное окно.</span>
+            </button>
+            <form class="form form--modal" method="post" action="https://echo.htmlacademy.ru" enctype="multipart/form-data">
+              <label class="form__label form__label--modal">
+                <input class="form__input form__input--modal" type="text" name="name" required>
+                <span class="form__label-value form__label-value--modal">Имя</span>
+              </label>
+              <label class="form__label form__label--modal">
+                <input class="form__input form__input--modal" type="tel" name="tel" required>
+                <span class="form__label-value form__label-value--modal">Телефон</span>
+              </label>
+              <div class="form__dropdown-wrapper form__dropdown-wrapper--modal">
+                <button class="form__dropdown-button form__dropdown-button--modal" type="button">
+                  <span class="visually-hidden">Выбрать город.</span>
+                </button>
+                <span class="form__label-value form__label-value--modal form__label-value--city">Выберите город</span>
+                <ul class="form__list">
+                  <li class="form__list-item" tabindex="0" data-value="moscow">Москва</li>
+                  <li class="form__list-item" tabindex="0" data-value="saint-petersburg">Санкт-Петербург</li>
+                  <li class="form__list-item" tabindex="0" data-value="kazan">Казань</li>
+                  <li class="form__list-item" tabindex="0" data-value="grozny">Грозный</li>
+                </ul>
+                <label>
+                  <input class="form__input-hidden" type="text" name="select-category" value="null">
+                  <span class="visually-hidden">Выбор города.</span>
+                </label>
+              </div>
+              <label class="form__label form__label--checkbox form__label--agree">
+                <input class="form__input-checkbox visually-hidden" type="checkbox" name="agree" tabindex="-1" required>
+                <span class="form__mark form__mark--modal" tabindex="0"></span>
+                <span class="form__agree form__agree--modal">Я согласен на обработку моих персональных<br> данных</span>
+              </label>
+              <button class="form__button form__button--light" type="submit">отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
     <script type="module" src="js/main.js"></script>
   </body>
-
 </html>

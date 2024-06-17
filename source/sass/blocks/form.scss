@@ -2,6 +2,17 @@
   display: flex;
   flex-direction: column;
   row-gap: 20px;
+
+  &--modal {
+    gap: 15px;
+    text-align: left;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--modal {
+      gap: 20px;
+    }
+  }
 }
 
 .form__label {
@@ -9,14 +20,27 @@
   flex-direction: column;
   row-gap: 12px;
 
+  &--modal {
+    row-gap: 8px;
+  }
+
   &--agree {
+    margin-top: -12px;
     position: relative;
     padding-left: 30px;
   }
 
   @media (min-width: $tablet-width) {
+    &--modal {
+      row-gap: 12px;
+    }
+
     &--agree {
       padding: 5px 0 3px 30px;
+    }
+
+    &--checkbox {
+      margin-top: -20px;
     }
   }
 }
@@ -34,6 +58,10 @@
   background-color: #ffffff;
   border-radius: 2px;
   cursor: pointer;
+
+  &--modal {
+    background-color: #316dc2;
+  }
 }
 
 .form__label-value {
@@ -42,6 +70,11 @@
   line-height: 14px;
   color: rgba(240, 239, 233, 0.8);
   order: -1;
+
+  &--modal {
+    color: rgba(72, 72, 72, 0.8);
+    font-size: 14px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -75,6 +108,25 @@
   }
 }
 
+.form__input--modal {
+  min-height: 44px;
+  border-color: rgba(72, 72, 72, 0.3);
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
+  }
+}
+
+.form__input--modal:hover,
+.form__input--modal:focus,
+.form__dropdown-button--modal:hover,
+.form__dropdown-button--modal:focus {
+  border-color: #484848;
+  color: #484848;
+}
+
+
 .form__input:hover + .form__label-value,
 .form__input:focus + .form__label-value,
 .form__message:hover + .form__label-value,
@@ -84,7 +136,15 @@
   color: #f0efe9;
 }
 
+.form__input--modal:hover + .form__label-value--modal,
+.form__input--modal:focus + .form__label-value--modal,
+.form__dropdown-button--modal:hover + .form__label-value--modal,
+.form__dropdown-button--modal:focus + .form__label-value--modal {
+  color: #484848;
+}
+
 .form__message {
+  margin-top: -8px;
   min-height: 94px;
   resize: none;
 
@@ -102,6 +162,16 @@
   display: flex;
   flex-direction: column;
   row-gap: 12px;
+
+  &--modal {
+    row-gap: 8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--modal {
+      row-gap: 12px;
+    }
+  }
 }
 
 .form__dropdown-button {
@@ -125,6 +195,25 @@
 
   @media (min-width: $tablet-width) {
     width: 100%;
+
+    &--modal {
+      min-height: 50px;
+    }
+  }
+}
+
+.form__dropdown-button--modal {
+  min-height: 44px;
+  color: #484848;
+  border-color: rgba(72, 72, 72, 0.3);
+
+  &::after {
+    background-color: #484848;
+    mask-image: url("../__spritemap#sprite-arrow-down-view");
+  }
+
+  @media (min-width: $tablet-width) {
+    min-height: 50px;
   }
 }
 
@@ -134,6 +223,10 @@
   &::after {
     transform: rotate(180deg) translateY(-50%);
   }
+}
+
+.form__dropdown-button--active-modal {
+  border-color: #484848;
 }
 
 .form__input-hidden {
@@ -154,6 +247,11 @@
   &--open {
     display: block;
     z-index: 1;
+  }
+
+  &--modal {
+    padding: 0;
+    border: 1px solid #484848;
   }
 
   @media (min-width: $tablet-width) {
@@ -244,6 +342,14 @@
     br {
       display: none;
     }
+  }
+}
+
+.form__agree--modal {
+  color: rgba(72, 72, 72, 0.9);
+
+  br {
+    display: none;
   }
 }
 
@@ -338,6 +444,14 @@
     }
   }
 
+  &--light {
+    margin-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    color: #316dc2;
+    border-color: #316dc2;
+  }
+
   @media (min-width: $tablet-width) {
     width: 352px;
     margin-top: 20px;
@@ -354,6 +468,15 @@
     &::after {
       right: 23px;
     }
+
+    &--light {
+      width: 194px;
+      margin-top: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 19px;
+      padding-bottom: 19px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -363,6 +486,50 @@
 
     &::after {
       right: 25px;
+    }
+  }
+}
+
+.form .form__button--light {
+  &::before {
+    background-color: #316dc2;
+  }
+
+  &::after {
+    background-color: #ffffff;
+  }
+
+  &:focus {
+    outline: none;
+
+    &::before {
+      background-color: #316dc2;
+    }
+
+    &::after {
+      background-color: #ffffff;
+    }
+  }
+
+  &:hover {
+    color: #ffffff;
+    background-color: #316dc2;
+
+    &::before {
+      background-color: #ffffff;
+    }
+
+    &::after {
+      background-color: #316dc2;
+    }
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+    background-color: #316dc2;
+
+    &::after {
+      background-color: rgba(49, 109, 194, 0.7);
     }
   }
 }

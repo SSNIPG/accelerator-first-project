@@ -1,12 +1,24 @@
 .page-form {
   padding: 40px 0;
 
+  &--modal {
+    padding: 0;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 50px 71px 50px 45px;
+
+    &--modal {
+      padding: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding: 60px 100px;
+
+    &--modal {
+      padding: 0;
+    }
   }
 }
 
@@ -16,6 +28,12 @@
   background-image: url("/img/form/mobile-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+
+  &--light {
+    min-height: auto;
+    padding: 0;
+    background-image: none;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;
@@ -35,15 +53,33 @@
   background-color: #316dc2;
   border-radius: 16px;
 
+  &--modal {
+    position: relative;
+    width: 290px;
+    padding: 40px 15px;
+    text-align: center;
+    background-color: #ffffff;
+  }
+
   @media (min-width: $tablet-width) {
     width: 442px;
     margin: 0;
     padding: 30px 40px 36px;
+
+    &--modal {
+      width: 510px;
+      padding: 60px 80px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 490px;
     padding: 30px 70px 40px;
+
+    &--modal {
+      width: 510px;
+      padding: 60px 80px;
+    }
   }
 }
 
@@ -55,11 +91,21 @@
   font-weight: 400;
   color: #ffffff;
 
+  &--modal {
+    line-height: 18px;
+    margin-bottom: 15px;
+    color: #316dc2;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 11px 0;
     margin-bottom: 20px;
     font-size: 28px;
     line-height: 28px;
+
+    &--modal {
+      padding: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -74,9 +120,20 @@
   margin-bottom: 20px;
   color: #f0efe9;
 
+  &--modal {
+    padding: 0 20px;
+    margin-bottom: 25px;
+    color: #484848;
+  }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 40px;
     font-size: 16px;
+
+    &--modal {
+      margin-bottom: 30px;
+      padding: 0;
+    }
   }
 
   @media (min-width: $desktop-width) {

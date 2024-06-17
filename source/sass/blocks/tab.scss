@@ -19,6 +19,18 @@
     color: #316dc2;
     border: 2px solid #316dc2;
     border-radius: 20px;
+    pointer-events: none;
+    outline: none;
+  }
+
+  &:hover {
+    color: #316dc2;
+  }
+
+  &:focus:not(.tab__button--current) {
+    background-color: #ffffff;
+    outline: none;
+    border-radius: 20px;
   }
 
   @media (min-width: $tablet-width) {
